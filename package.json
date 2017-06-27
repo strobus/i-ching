@@ -1,0 +1,26 @@
+{
+  "name": "i-ching",
+  "version": "0.0.2",
+  "description": "library and API for working with the i-ching",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strobus/i-ching.git"
+  },
+  "author": "p.strobus@yahoo.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/strobus/i-ching/issues"
+  },
+  "homepage": "https://github.com/strobus/i-ching#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.4.2"
+  }
+}

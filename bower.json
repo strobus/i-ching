@@ -1,0 +1,20 @@
+{
+  "name": "i-ching",
+  "description": "library and API for working with the i-ching",
+  "main": "index.js",
+  "authors": [
+    "p.strobus@yahoo.com"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}

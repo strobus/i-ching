@@ -1,0 +1,613 @@
+{
+  "trigrams": [
+    {
+      "number": 1,
+      "names": ["The Creative"],
+      "chineseName": "乾 (qián)",
+      "character": "☰",
+      "attribute": "strong",
+      "images": ["heaven"],
+      "chineseImage": "天 (tiān)",
+      "familyRelationship": "father",
+      "binaryRepresentation": "111",
+      "lines": ["yang", "yang", "yang"]
+    },
+    {
+      "number": 2,
+      "names": ["Field", "The Receptive"],
+      "chineseName": "坤 (kūn)",
+      "character": "☷",
+      "attribute": "devoted, yielding",
+      "images": ["earth"],
+      "chineseImage": "地 (dì)",
+      "familyRelationship": "mother",
+      "binaryRepresentation": "000",
+      "lines": ["yin", "yin", "yin"]
+    },
+    {
+      "number": 3,
+      "names": ["Shake", "The Arousing"],
+      "chineseName": "震 (zhèn)",
+      "character": "☳",
+      "attribute": "inciting movement",
+      "images": ["thunder"],
+      "chineseImage": "雷 (léi)",
+      "familyRelationship": "first son",
+      "binaryRepresentation": "001",
+      "lines": ["yang", "yin", "yin"]
+    },
+    {
+      "number": 4,
+      "names": ["Gorge", "The Abysmal"],
+      "chineseName": "坎 (kǎn)",
+      "character": "☵",
+      "attribute": "dangerous",
+      "images": ["water"],
+      "chineseImage": "水 (shuǐ)",
+      "familyRelationship": "second son",
+      "binaryRepresentation": "010",
+      "lines": ["yin", "yang", "yin"]
+    },
+    {
+      "number": 5,
+      "names": ["Bound", "Keeping Still"],
+      "chineseName": "艮 (gèn)",
+      "character": "☶",
+      "attribute": "resting",
+      "images": ["mountain"],
+      "chineseImage": "山 (shān)",
+      "familyRelationship": "third son",
+      "binaryRepresentation": "100",
+      "lines": ["yin", "yin", "yang"]
+    },
+    {
+      "number": 6,
+      "names": ["Ground", "The Gentle"],
+      "chineseName": "巽 (xùn)",
+      "character": "☴",
+      "attribute": "penetrating",
+      "images": ["wind", "wood"],
+      "chineseImage": "風 (fēng)",
+      "familyRelationship": "first daughter",
+      "binaryRepresentation": "110",
+      "lines": ["yin", "yang", "yang"]
+    },
+    {
+      "number": 7,
+      "names": ["Radiance", "The Clinging"],
+      "chineseName": "離 (lí)",
+      "character": "☲",
+      "attribute": "light-giving",
+      "images": ["fire"],
+      "chineseImage": "火 (huǒ)",
+      "familyRelationship": "second daughter",
+      "binaryRepresentation": "101",
+      "lines": ["yang", "yin", "yang"]
+    },
+    {
+      "number": 8,
+      "names": ["Open", "The Joyous"],
+      "chineseName": "兌 (duì)",
+      "character": "☱",
+      "attribute": "joyful",
+      "images": ["swamp", "lake"],
+      "chineseImage": "澤 (zé)",
+      "familyRelationship": "third daughter",
+      "binaryRepresentation": "011",
+      "lines": ["yang", "yang", "yin"]
+    }
+  ],
+  "hexagrams": [
+    {
+      "number": 1,
+      "names": ["Force", "The Creative"],
+      "chineseName": "乾 (qián)",
+      "character": "䷀",
+      "topTrigram": 1,
+      "bottomTrigram": 1
+    },
+    {
+      "number": 2,
+      "names": ["Field", "The Receptive"],
+      "chineseName": "坤 (kūn)",
+      "character": "䷁",
+      "topTrigram": 2,
+      "bottomTrigram": 2
+    },
+    {
+      "number": 3,
+      "names": ["Sprouting", "Difficulty at the Beginning"],
+      "chineseName": "屯 (zhūn)",
+      "character": "䷂",
+      "topTrigram": 4,
+      "bottomTrigram": 3
+    },
+    {
+      "number": 4,
+      "names": ["Enveloping", "Youthful Folly"],
+      "chineseName": "蒙 (méng)",
+      "character": "䷃",
+      "topTrigram": 5,
+      "bottomTrigram": 4
+    },
+    {
+      "number": 5,
+      "names": ["Attending", "Waiting"],
+      "chineseName": "需 (xū)",
+      "character": "䷄",
+      "topTrigram": 4,
+      "bottomTrigram": 1
+    },
+    {
+      "number": 6,
+      "names": ["Arguing", "Conflict"],
+      "chineseName": "訟 (sòng)",
+      "character": "䷅",
+      "topTrigram": 1,
+      "bottomTrigram": 4
+    },
+    {
+      "number": 7,
+      "names": ["Leading", "The Army"],
+      "chineseName": "師 (shī)",
+      "character": "䷆",
+      "topTrigram": 2,
+      "bottomTrigram": 4
+    },
+    {
+      "number": 8,
+      "names": ["Grouping", "Holding Together [Union]"],
+      "chineseName": "比 (bǐ)",
+      "character": "䷇",
+      "topTrigram": 4,
+      "bottomTrigram": 2
+    },
+    {
+      "number": 9,
+      "names": ["Small Accumulating", "The Taming Power of the Small"],
+      "chineseName": "小畜 (xiǎo chù)",
+      "character": "䷈",
+      "topTrigram": 6,
+      "bottomTrigram": 1
+    },
+    {
+      "number": 10,
+      "names": ["Treading", "Conduct"],
+      "chineseName": "履 (lǚ)",
+      "character": "䷉",
+      "topTrigram": 1,
+      "bottomTrigram": 8
+    },
+    {
+      "number": 11,
+      "names": ["Pervading", "Peace"],
+      "chineseName": "泰 (tài)",
+      "character": "䷊",
+      "topTrigram": 2,
+      "bottomTrigram": 1
+    },
+    {
+      "number": 12,
+      "names": ["Obstruction", "Standstill (Stagnation)"],
+      "chineseName": "否 (pǐ)",
+      "character": "䷋",
+      "topTrigram": 1,
+      "bottomTrigram": 2
+    },
+    {
+      "number": 13,
+      "names": ["Concording People", "Fellowship with Men"],
+      "chineseName": "同人 (tóng rén)",
+      "character": "䷌",
+      "topTrigram": 1,
+      "bottomTrigram": 7
+    },
+    {
+      "number": 14,
+      "names": ["Great Possessing", "Possession in Great Measure"],
+      "chineseName": "大有 (dà yǒu)",
+      "character": "䷍",
+      "topTrigram": 7,
+      "bottomTrigram": 1
+    },
+    {
+      "number": 15,
+      "names": ["Humbling", "Modesty"],
+      "chineseName": "謙 (qiān)",
+      "topTrigram": 2,
+      "bottomTrigram": 5
+    },
+    {
+      "number": 16,
+      "names": ["Providing-For", "Enthusiasm"],
+      "chineseName": "豫 (yù)",
+      "character": "䷏",
+      "topTrigram": 3,
+      "bottomTrigram": 2
+    },
+    {
+      "number": 17,
+      "names": ["Following"],
+      "chineseName": "隨 (suí)",
+      "character": "䷐",
+      "topTrigram": 8,
+      "bottomTrigram": 3
+    },
+    {
+      "number": 18,
+      "names": ["Correcting", "Work on What Has Been Spoiled [Decay]"],
+      "chineseName": "蠱 (gǔ)",
+      "character": "䷑",
+      "topTrigram": 5,
+      "bottomTrigram": 6
+    },
+    {
+      "number": 19,
+      "names": ["Nearing", "Approach"],
+      "chineseName": "臨 (lín)",
+      "character": "䷒",
+      "topTrigram": 2,
+      "bottomTrigram": 8
+    },
+    {
+      "number": 20,
+      "names": ["Viewing", "Contemplation (View)"],
+      "chineseName": "觀 (guān)",
+      "character": "䷓",
+      "topTrigram": 6,
+      "bottomTrigram": 2
+    },
+    {
+      "number": 21,
+      "names": ["Gnawing Bite", "Biting Through"],
+      "chineseName": "噬嗑 (shì kè)",
+      "character": "䷔",
+      "topTrigram": 7,
+      "bottomTrigram": 3
+    },
+    {
+      "number": 22,
+      "names": ["Adorning", "Grace"],
+      "chineseName": "賁 (bì)",
+      "character": "䷕",
+      "topTrigram": 5,
+      "bottomTrigram": 7
+    },
+    {
+      "number": 23,
+      "names": ["Stripping", "Splitting Apart"],
+      "chineseName": "剝 (bō)",
+      "character": "䷖",
+      "topTrigram": 5,
+      "bottomTrigram": 2
+    },
+    {
+      "number": 24,
+      "names": ["Returning", "Return (The Turning Point"],
+      "chineseName": "復 (fù)",
+      "character": "䷗",
+      "topTrigram": 2,
+      "bottomTrigram": 3
+    },
+    {
+      "number": 25,
+      "names": ["Without Embroiling", "Innocence (The Unexpected)"],
+      "chineseName": "無妄 (wú wàng)",
+      "character": "䷘",
+      "topTrigram": 1,
+      "bottomTrigram": 3
+    },
+    {
+      "number": 26,
+      "names": ["Great Accumulating", "The Taming Power of the Great"],
+      "chineseName": "大畜 (dà chù)",
+      "character": "䷙",
+      "topTrigram": 5,
+      "bottomTrigram": 1
+    },
+    {
+      "number": 27,
+      "names": ["Swallowing", "The Corners of the Mouth (Providing Nourishment)"],
+      "chineseName": "頤 (yí)",
+      "character": "䷚",
+      "topTrigram": 5,
+      "bottomTrigram": 3
+    },
+    {
+      "number": 28,
+      "names": ["Great Exceeding", "Preponderance of the Great"],
+      "chineseName": "大過 (dà guò)",
+      "character": "䷛",
+      "topTrigram": 8,
+      "bottomTrigram": 6
+    },
+    {
+      "number": 29,
+      "names": ["Gorge", "The Abysmal (Water)"],
+      "chineseName": "坎 (kǎn)",
+      "character": "䷜",
+      "topTrigram": 4,
+      "bottomTrigram": 4
+    },
+    {
+      "number": 30,
+      "names": ["Radiance", "The Clinging, Fire"],
+      "chineseName": "離 (lí)",
+      "character": "䷝",
+      "topTrigram": 7,
+      "bottomTrigram": 7
+    },
+    {
+      "number": 31,
+      "names": ["Conjoining", "Influence (Wooing)"],
+      "chineseName": "咸 (xián)",
+      "character": "䷞",
+      "topTrigram": 8,
+      "bottomTrigram": 5
+    },
+    {
+      "number": 32,
+      "names": ["Persevering", "Duration"],
+      "chineseName": "恆 (héng)",
+      "character": "䷟",
+      "topTrigram": 3,
+      "bottomTrigram": 6
+    },
+    {
+      "number": 33,
+      "names": ["Retiring", "Retreat"],
+      "chineseName": "遯 (dùn)",
+      "character": "䷠",
+      "topTrigram": 1,
+      "bottomTrigram": 5
+    },
+    {
+      "number": 34,
+      "names": ["Great Invigorating", "The Power of the Great"],
+      "chineseName": "大壯 (dà zhuàng)",
+      "character": "䷡",
+      "topTrigram": 3,
+      "bottomTrigram": 1
+    },
+    {
+      "number": 35,
+      "names": ["Prospering", "Progress"],
+      "chineseName": "晉 (jìn)",
+      "character": "䷢",
+      "topTrigram": 7,
+      "bottomTrigram": 2
+    },
+    {
+      "number": 36,
+      "names": ["Darkening of the Light"],
+      "chineseName": "明夷 (míng yí)",
+      "character": "䷣",
+      "topTrigram": 2,
+      "bottomTrigram": 7
+    },
+    {
+      "number": 37,
+      "names": ["Dwelling People", "The Family [The Clan]"],
+      "chineseName": "家人 (jiā rén)",
+      "character": "䷤",
+      "topTrigram": 6,
+      "bottomTrigram": 7
+    },
+    {
+      "number": 38,
+      "names": ["Polarizing", "Opposition"],
+      "chineseName": "睽 (kuí)",
+      "character": "䷥",
+      "topTrigram": 7,
+      "bottomTrigram": 8
+    },
+    {
+      "number": 39,
+      "names": ["Limping", "Obstruction"],
+      "chineseName": "蹇 (jiǎn)",
+      "character": "䷦",
+      "topTrigram": 4,
+      "bottomTrigram": 5
+    },
+    {
+      "number": 40,
+      "names": ["Taking-Apart", "Deliverance"],
+      "chineseName": "解 (xiè)",
+      "character": "䷧",
+      "topTrigram": 3,
+      "bottomTrigram": 4
+    },
+    {
+      "number": 41,
+      "names": ["Diminishing", "Decrease"],
+      "chineseName": "損 (sǔn)",
+      "character": "䷨",
+      "topTrigram": 5,
+      "bottomTrigram": 8
+    },
+    {
+      "number": 42,
+      "names": ["Augmenting", "Increase"],
+      "chineseName": "益 (yì)",
+      "character": "䷩",
+      "topTrigram": 6,
+      "bottomTrigram": 3
+    },
+    {
+      "number": 43,
+      "names": ["Displacement", "Break-through (Resoluteness)"],
+      "chineseName": "夬 (guài)",
+      "character": "䷪",
+      "topTrigram": 8,
+      "bottomTrigram": 1
+    },
+    {
+      "number": 44,
+      "names": ["Coupling", "Coming to Meet"],
+      "chineseName": "姤 (gòu)",
+      "character": "䷫",
+      "topTrigram": 1,
+      "bottomTrigram": 6
+    },
+    {
+      "number": 45,
+      "names": ["Clustering", "Gathering Together [Massing]"],
+      "chineseName": "萃 (cuì)",
+      "character": "䷬",
+      "topTrigram": 8,
+      "bottomTrigram": 2
+    },
+    {
+      "number": 46,
+      "names": ["Ascending", "Pushing Upward"],
+      "chineseName": "升 (shēng)",
+      "character": "䷭",
+      "topTrigram": 2,
+      "bottomTrigram": 6
+    },
+    {
+      "number": 47,
+      "names": ["Confining", "Oppression (Exhaustion)"],
+      "chineseName": "困 (kùn)",
+      "character": "䷮",
+      "topTrigram": 8,
+      "bottomTrigram": 4
+    },
+    {
+      "number": 48,
+      "names": ["Welling", "The Well"],
+      "chineseName": "井 (jǐng)",
+      "character": "䷯",
+      "topTrigram": 4,
+      "bottomTrigram": 6
+    },
+    {
+      "number": 49,
+      "names": ["Skinning", "Revolution (Molting)"],
+      "chineseName": "革 (gé)",
+      "character": "䷰",
+      "topTrigram": 8,
+      "bottomTrigram": 7
+    },
+    {
+      "number": 50,
+      "names": ["Holding", "The Caldron"],
+      "chineseName": "鼎 (dǐng)",
+      "character": "䷱",
+      "topTrigram": 7,
+      "bottomTrigram": 6
+    },
+    {
+      "number": 51,
+      "names": ["Shake", "The Arousing (Shock, Thunder)"],
+      "chineseName": "震 (zhèn)",
+      "character": "䷲",
+      "topTrigram": 3,
+      "bottomTrigram": 3
+    },
+    {
+      "number": 52,
+      "names": ["Bound", "Keeping Still, Mountain"],
+      "chineseName": "艮 (gèn)",
+      "character": "䷳",
+      "topTrigram": 5,
+      "bottomTrigram": 5
+    },
+    {
+      "number": 53,
+      "names": ["Infiltrating", "Development (Gradual Progress)"],
+      "chineseName": "漸 (jiàn)",
+      "character": "䷴",
+      "topTrigram": 6,
+      "bottomTrigram": 5
+    },
+    {
+      "number": 54,
+      "names": ["Converting the Maiden", "The Marrying Maiden"],
+      "chineseName": "歸妹 (guī mèi)",
+      "character": "䷵",
+      "topTrigram": 3,
+      "bottomTrigram": 8
+    },
+    {
+      "number": 55,
+      "names": ["Abouding", "Abundance [Fullness]"],
+      "chineseName": "豐 (fēng)",
+      "character": "䷶",
+      "topTrigram": 3,
+      "bottomTrigram": 7
+    },
+    {
+      "number": 56,
+      "names": ["Sojourning", "The Wanderer"],
+      "chineseName": "旅 (lǚ)",
+      "character": "䷷",
+      "topTrigram": 7,
+      "bottomTrigram": 5
+    },
+    {
+      "number": 57,
+      "names": ["Ground", "The Gentle (The Penetrating, Wind)"],
+      "chineseName": "巽 (xùn)",
+      "character": "䷸",
+      "topTrigram": 6,
+      "bottomTrigram": 6
+    },
+    {
+      "number": 58,
+      "names": ["Open", "The Joyous, Lake"],
+      "chineseName": "兌 (duì)",
+      "character": "䷹",
+      "topTrigram": 8,
+      "bottomTrigram": 8
+    },
+    {
+      "number": 59,
+      "names": ["Dispersing", "Dispersion [Dissolution]"],
+      "chineseName": "渙 (huàn)",
+      "character": "䷺",
+      "topTrigram": 6,
+      "bottomTrigram": 4
+    },
+    {
+      "number": 60,
+      "names": ["Articulating", "Limitation"],
+      "chineseName": "節 (jié)",
+      "character": "䷻",
+      "topTrigram": 4,
+      "bottomTrigram": 8
+    },
+    {
+      "number": 61,
+      "names": ["Center Returing", "Inner Truth"],
+      "chineseName": "中孚 (zhōng fú)",
+      "character": "䷼",
+      "topTrigram": 6,
+      "bottomTrigram": 8
+    },
+    {
+      "number": 62,
+      "names": ["Small Exceeding", "Preponderance of the Small"],
+      "chineseName": "小過 (xiǎo guò)",
+      "character": "䷽",
+      "topTrigram": 3,
+      "bottomTrigram": 5
+    },
+    {
+      "number": 63,
+      "names": ["Already Fording", "After Completion"],
+      "chineseName": "既濟 (jì jì)",
+      "character": "䷾",
+      "topTrigram": 4,
+      "bottomTrigram": 7
+    },
+    {
+      "number": 64,
+      "names": ["Not Yet Fording", "Before Completion"],
+      "chineseName": "未濟 (wèi jì)",
+      "character": "䷿",
+      "topTrigram": 7,
+      "bottomTrigram": 4
+    }
+  ]
+}
