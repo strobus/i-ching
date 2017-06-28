@@ -127,7 +127,7 @@ console.log(iChing.asGraph());
  } */
  ```
 
-The names of the hexagram-to-hexagram edges are the binary representation of the changing lines between those hexagrams. For more information see the `Hexagram.binary` property.
+The names of the hexagram-to-hexagram edges are the binary representation of the changing lines between those hexagrams. For more information see the [`Change.binary`](#changebinary) property.
 
 #### iChing.hexagram(number)
 
@@ -414,7 +414,7 @@ console.log(iChing.hexagram(5).changeTo(1).changingLines);
 
 ### Properties
 
-#### Change.binary
+#### <a name="changebinary"></a>Change.binary
 
 Returns a string containing the binary representation of the change lines. The most significant digit represents the top line and the least significant digit represents the bottom line. A bit value of 1 means the line changed, and a value of 0 means it did not change.
 
