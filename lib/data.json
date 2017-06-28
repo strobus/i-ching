@@ -3,6 +3,7 @@
     {
       "number": 1,
       "names": [
+        "Force",
         "The Creative"
       ],
       "chineseName": "乾 (qián)",
@@ -458,6 +459,7 @@
         "Modesty"
       ],
       "chineseName": "謙 (qiān)",
+      "character": "䷎",
       "topTrigram": 2,
       "bottomTrigram": 5,
       "binary": "000100",

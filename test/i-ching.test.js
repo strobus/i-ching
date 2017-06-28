@@ -120,7 +120,7 @@ describe('iChing', () => {
 
     it('should populate edge data', () => {
       let g = iChing.asGraph();
-      expect(g.edges[0].id).toBe('h1-t1');
+      expect(g.edges[0].id).toBe('h1-t1-bottom');
       expect(g.edges[0].from).toBe('h1');
       expect(g.edges[0].to).toBe('t1');
       expect(g.edges[0].name).toBe('bottom');
@@ -164,6 +164,11 @@ describe('Hexagram', () => {
       expect(c.changingLines).toContain(1);
       expect(c.changingLines).toNotContain(0);
     });
+
+    it('should return null if hexagram number is the same', () => {
+      let h = iChing.hexagram(5);
+      expect(h.changeTo(5)).toNotExist();
+    })
   });
 
   describe('#changes', () => {
