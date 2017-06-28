@@ -94,7 +94,7 @@ console.log(iChing.trigrams.length);
 
 #### iChing.asGraph()
 
-Returns an object suitable for graph applications. 
+Returns an object suitable for graph applications.
 
 **Example**
 ```javascript
@@ -126,7 +126,7 @@ console.log(iChing.asGraph());
    ]
  } */
  ```
- 
+
 The names of the hexagram-to-hexagram edges are the binary representation of the changing lines between those hexagrams. For more information see the `Hexagram.binary` property.
 
 #### iChing.hexagram(number)
@@ -416,7 +416,7 @@ console.log(iChing.hexagram(5).changeTo(1).changingLines);
 
 #### Change.binary
 
-Returns a string containing the binary representation of the change lines. The most significant digit represents the top line and the least significant digit represents the bottom line. A bit value of 1 means the line changed, and a value of 0 means it did not change. 
+Returns a string containing the binary representation of the change lines. The most significant digit represents the top line and the least significant digit represents the bottom line. A bit value of 1 means the line changed, and a value of 0 means it did not change.
 
 **Example**
 ```javascript
@@ -428,7 +428,7 @@ console.log('%s -> %s %s', h.character, c.to.character, c.binary);
 
 #### Change.changingLines
 
-Returns an array of integers representing the changing lines. A value of 1 denotes a changed line. A value of 0 denotes an unchanged line. Lines are represented from the bottom of the hexagram to top in the array. 
+Returns an array of integers representing the changing lines. A value of 1 denotes a changed line. A value of 0 denotes an unchanged line. Lines are represented from the bottom of the hexagram to top in the array.
 
 **Example**
 ```javascript
@@ -457,9 +457,14 @@ Returns the `Hexagram` which results from the change.
 console.log(iChing.hexagram(5).changeTo(1).from.number);
 // output: 1
 ```
+# Test
+
+```shell
+npm test
+```
 
 # References
 
 * [Wilhelm, R. & Baynes, C. (1967). The I ching; or, Book of changes. Princeton, N.J: Princeton University Press](https://www.amazon.com/Ching-Changes-Bollingen-Princeton-University/dp/069109750X) (amazon.com).
 
-* [List of Hexagrams of the I Ching]((https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching) (Wikipedia).
+* [List of Hexagrams of the I Ching](https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching) (Wikipedia).
