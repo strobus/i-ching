@@ -72,7 +72,7 @@ var iChing = require('i-ching');
 
 #### iChing.hexagrams
 
-Returns an array containing the 64 `Hexagram`s.
+Returns an array containing the 64 [`Hexagram`](#hexagram)s.
 
 **Example**
 ```javascript
@@ -82,7 +82,7 @@ console.log(iChing.hexagrams.length);
 
 #### iChing.trigrams
 
-Returns an array containing the 8 `Trigram`s.
+Returns an array containing the 8 [`Trigram`](#trigram)s.
 
 **Example**
 ```javascript
@@ -127,11 +127,11 @@ console.log(iChing.asGraph());
  } */
  ```
 
-The names of the hexagram-to-hexagram edges are the binary representation of the changing lines between those hexagrams. For more information see the [`Change.binary`](#changebinary) property.
+The names of the hexagram-to-hexagram edges are the binary representation of the changing lines between those hexagrams. For more information see the [`Change.binary`](#change-binary) property.
 
 #### iChing.hexagram(number)
 
-Returns the `Hexagram` corresponding to the `number`. The `number` must be an integer from 1 to 64 inclusive. Hexagrams are numbered according to the [traditional sequence](https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching).
+Returns the [`Hexagram`](#hexagram) corresponding to the `number`. The `number` must be an integer from 1 to 64 inclusive. Hexagrams are numbered according to the [traditional sequence](https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching).
 
 **Example**
 ```javascript
@@ -141,7 +141,7 @@ console.log(iChing.hexagram(22).names);
 
 #### iChing.trigram(number)
 
-Returns the `Trigram` corresponding to the `number`. The `number` must be an integer from 1 to 8 inclusive. Trigrams are numbered as follows:
+Returns the [`Trigram`](#trigram) corresponding to the `number`. The `number` must be an integer from 1 to 8 inclusive. Trigrams are numbered as follows:
 
 1. ☰ Force, The Creative
 1. ☷ Field, The Receptive
@@ -160,7 +160,7 @@ console.log(iChing.trigram(1).names);
 
 #### iChing.trigramSequence(name)
 
-Returns an array of `Trigrams` ordered according to the `name`d traditional sequence. Possible values for `name` and their corresponding outputs are as follows.
+Returns an array of [`Trigram`](#trigram)s ordered according to the `name`d traditional sequence. Possible values for `name` and their corresponding outputs are as follows.
 
 **"earlierHeaven"**
 
@@ -198,7 +198,7 @@ Returns an array of `Trigrams` ordered according to the `name`d traditional sequ
 
 7\. ☴ Ground, The Gentle
 
-## Trigram
+## <a name="trigram"></a>Trigram
 
 ### Properties
 
@@ -224,7 +224,7 @@ console.log('%s %s', iChing.trigram(3).character, iChing.trigram(3).binary);
 
 #### Trigram.character
 
-Returns a string containing the trigram character, which is a pictogram representing the lines of the trigram. The characters codes for these characters range from `\u9776` to `\u9783'.
+Returns a string containing the trigram character, which is a pictogram representing the lines of the trigram. The characters codes for these characters range from `\u9776` to `\u9783`.
 
 **Example**
 ```javascript
@@ -302,7 +302,7 @@ console.log(iChing.trigram(1).number);
 // output: 1
 ```
 
-## Hexagram
+## <a name="hexagram"></a>Hexagram
 
 ### Properties
 
@@ -328,7 +328,7 @@ console.log('%s %s', iChing.hexagram(8).character, iChing.hexagram(8).bottomTrig
 
 #### Hexagram.changes
 
-Returns an array of `Change`s representing the 63 possible changes to the other hexagrams of the I Ching.
+Returns an array of [`Change`](#change)s representing the 63 possible changes to the other hexagrams of the I Ching.
 
 **Example**
 ```javascript
@@ -390,7 +390,7 @@ console.log(iChing.hexagram(15).number);
 
 #### Hexagram.topTrigram
 
-Returns a `Trigram` representing the top 3 lines of the hexagram.
+Returns a [`Trigram`](#trigram) representing the top 3 lines of the hexagram.
 
 **Example**
 ```javascript
@@ -402,7 +402,7 @@ console.log('%s %s', iChing.hexagram(8).character, iChing.hexagram(8).topTrigram
 
 #### Hexagram.changeTo(number)
 
-Returns a `Change` representing the change from the current hexagram to the hexagram specified by `number`. The `number` must be an integer from 1 to 64 inclusive. If `number` is the number of the current hexagram, then the method returns `null`. Hexagrams are numbered according to the [traditional sequence](https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching).
+Returns a [`Change`](#change) representing the change from the current hexagram to the hexagram specified by `number`. The `number` must be an integer from 1 to 64 inclusive. If `number` is the number of the current hexagram, then the method returns `null`. Hexagrams are numbered according to the [traditional sequence](https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching).
 
 **Example**
 ```javascript
@@ -414,7 +414,7 @@ console.log(iChing.hexagram(5).changeTo(1).changingLines);
 
 ### Properties
 
-#### <a name="changebinary"></a>Change.binary
+#### <a name="change-binary"></a>Change.binary
 
 Returns a string containing the binary representation of the change lines. The most significant digit represents the top line and the least significant digit represents the bottom line. A bit value of 1 means the line changed, and a value of 0 means it did not change.
 
@@ -422,7 +422,7 @@ Returns a string containing the binary representation of the change lines. The m
 ```javascript
 var h = iChing.hexagram(5);
 var c = h.changeTo(1);
-console.log('%s -> %s %s', h.character, c.to.character, c.binary);
+console.log('%s -> %s %s', c.from.character, c.to.character, c.binary);
 // output: ䷄ -> ䷀ 101000
 ```
 
@@ -434,13 +434,13 @@ Returns an array of integers representing the changing lines. A value of 1 denot
 ```javascript
 var h = iChing.hexagram(5);
 var c = h.changeTo(1);
-console.log('%s -> %s %s', h.character, c.to.character, c.changingLines);
+console.log('%s -> %s %s', c.from.character, c.to.character, c.changingLines);
 // output: ䷄ -> ䷀ [ 0, 0, 0, 1, 0, 1 ]
 ```
 
 #### Change.from
 
-Returns the `Hexagram` from which the change originated.
+Returns the [`Hexagram`](#hexagram) from which the change originated.
 
 **Example**
 ```javascript
@@ -450,7 +450,7 @@ console.log(iChing.hexagram(5).changeTo(1).from.number);
 
 #### Change.to
 
-Returns the `Hexagram` which results from the change.
+Returns the [`Hexagram`](#hexagram) which results from the change.
 
 **Example**
 ```javascript
