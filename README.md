@@ -410,7 +410,7 @@ console.log(iChing.hexagram(5).changeTo(1).changingLines);
 // output: [ 0, 0, 0, 1, 0, 1 ]
 ```
 
-## Change
+## <a name="change"></a>Change
 
 ### Properties
 
@@ -454,7 +454,7 @@ Returns the [`Hexagram`](#hexagram) which results from the change.
 
 **Example**
 ```javascript
-console.log(iChing.hexagram(5).changeTo(1).from.number);
+console.log(iChing.hexagram(5).changeTo(1).to.number);
 // output: 1
 ```
 # Test
