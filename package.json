@@ -1,6 +1,6 @@
 {
   "name": "i-ching",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "library and API for working with the i-ching",
   "main": "index.js",
   "scripts": {
