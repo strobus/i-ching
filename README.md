@@ -15,7 +15,7 @@ var iChing = require('i-ching');
 ```
 
 ```javascript
-var reading = iChing.reading('to be or not to be?');
+var reading = iChing.ask('to be or not to be?');
 console.log('%d %s %s', 
             reading.hexagram.number, 
             reading.hexagram.character,
@@ -189,7 +189,7 @@ console.log(iChing.hexagram(22).names);
 // output: [ 'Adorning', 'Grace' ]
 ```
 
-#### iChing.reading(question)
+#### iChing.ask(question)
 
 Returns a [`Reading`](#reading) with randomness seeded by the supplied `question`. The question can be any javascript type including strings, numbers, objects, and arrays. Supplying the same input twice will not, however, result in the same reading.
 
@@ -197,7 +197,7 @@ The reading is generated using the yarrow stalk method described in Wilhelm's tr
 
 **Example**
 ```javascript
-var reading = iChing.reading('what is the meaning of life?');
+var reading = iChing.ask('what is the meaning of life?');
 console.log('%d -> %d %j', 
             reading.hexagram.character, 
             reading.change.to.character, 
@@ -560,7 +560,7 @@ Returns the [`Hexagram`](#hexagram) that was divined by the Oracle based on the 
 
 **Example**
 ```javascript
-var reading = iChing.reading('which hexagram is the best for me?');
+var reading = iChing.ask('which hexagram is the best for me?');
 console.log(reading.hexagram.names);
 // output (will very due to randomness in the reading):
 [ 'Great Exceeding', 'Preponderance of the Great' ]
@@ -572,7 +572,7 @@ Returns the [`Change`](#change) that was divined by the Oracle of the main hexag
 
 **Example**
 ```javascript
-var reading = iChing.reading('what am I becoming?');
+var reading = iChing.ask('what am I becoming?');
 console.log(reading.change ? reading.change.to.number : 'nothing!');
 // output (will vary due to randomness in the reading):
 [ 'Bound', 'Keeping Still, Mountain' ]
@@ -640,6 +640,10 @@ npm test
 ```
 
 # Change Log
+
+### Version 0.3.1
+
+* Changed `iChing.reading` method to `iChing.ask`.
 
 ### Version 0.2.1
 

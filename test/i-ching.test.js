@@ -103,7 +103,7 @@ describe('iChing', () => {
       // get a reading that has no changed lines
       let r;
       while (!r || r.change != null) {
-        r = iChing.reading('get me an unchanged reading!');
+        r = iChing.ask('get me an unchanged reading!');
       }
       expect(r.hexagram).toExist();
       expect(r.change).toNotExist();
@@ -113,7 +113,7 @@ describe('iChing', () => {
       // get a reading that has changed lines
       let r;
       while (!r || r.change == null) {
-        r = iChing.reading('get me a reading that has changes!');
+        r = iChing.ask('get me a reading that has changes!');
       }
       expect(r.hexagram).toExist();
       expect(r.change).toExist();
