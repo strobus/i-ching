@@ -85,7 +85,7 @@ Hexagram {
 ```
 
 Get a specific Change:
-```
+```javascript
 console.log(iChing.hexagram(1).changeTo(63));
 /* output:
 Change {
@@ -107,7 +107,7 @@ Change {
 # Installation
 
 ```shell
-npm install i-ching
+npm install --save i-ching
 ```
 
 # API
@@ -198,7 +198,10 @@ The reading is generated using the yarrow stalk method described in Wilhelm's tr
 **Example**
 ```javascript
 var reading = iChing.reading('what is the meaning of life?');
-console.log('%d -> %d %j', reading.hexagram.character, reading.change.to.character, reading.change.changingLines);
+console.log('%d -> %d %j', 
+            reading.hexagram.character, 
+            reading.change.to.character, 
+            reading.change.changingLines);
 // output (will vary due to randomness):
 ䷀ -> ䷾ [0,1,0,1,0,1]
 ```
@@ -284,7 +287,9 @@ Returns a string containing the binary representation of the lines of the trigra
 
 **Example**
 ```javascript
-console.log('%s %s', iChing.trigram(3).character, iChing.trigram(3).binary);
+console.log('%s %s', 
+            iChing.trigram(3).character, 
+            iChing.trigram(3).binary);
 // output: ☳ 001
 ```
 
@@ -344,7 +349,9 @@ Returns an array of integers representing the lines of the trigram. A value of 1
 
 **Example**
 ```javascript
-console.log('%s %j', iChing.trigram(3).character, iChing.trigram(3).lines);
+console.log('%s %j', 
+            iChing.trigram(3).character, 
+            iChing.trigram(3).lines);
 // output: ☳ [1,0,0]
 ```
 
@@ -410,7 +417,9 @@ Returns a string containing the binary representation of the lines of the hexagr
 
 **Example**
 ```javascript
-console.log('%s %s', iChing.hexagram(63).character, iChing.hexagram(63).binary);
+console.log('%s %s', 
+            iChing.hexagram(63).character, 
+            iChing.hexagram(63).binary);
 // output: ䷾ 010101
 ```
 
@@ -420,7 +429,9 @@ Returns a `Trigram` representing the bottom 3 lines of the hexagram.
 
 **Example**
 ```javascript
-console.log('%s %s', iChing.hexagram(8).character, iChing.hexagram(8).bottomTrigram.character);
+console.log('%s %s', 
+            iChing.hexagram(8).character, 
+            iChing.hexagram(8).bottomTrigram.character);
 // output: ䷇ ☷
 ```
 
@@ -434,6 +445,7 @@ var h = iChing.hexagram(48);
 var c = h.changes[0];
 console.log('%s -> %s %s', h.character, c.to.character, c.binary);
 // output: ䷯ -> ䷀ 101001
+```
 
 #### Hexagram.character
 
@@ -462,7 +474,9 @@ Returns an array of integers representing the lines of the hexagram. A value of 
 
 **Example**
 ```javascript
-console.log('%s %j', iChing.hexagram(64).character, iChing.hexagram(64).lines);
+console.log('%s %j', 
+            iChing.hexagram(64).character, 
+            iChing.hexagram(64).lines);
 // output: ䷿ [0,1,0,1,0,1]
 ```
 
@@ -502,7 +516,9 @@ Returns a [`Trigram`](#trigram) representing the top 3 lines of the hexagram.
 
 **Example**
 ```javascript
-console.log('%s %s', iChing.hexagram(8).character, iChing.hexagram(8).topTrigram.character);
+console.log('%s %s', 
+            iChing.hexagram(8).character, 
+            iChing.hexagram(8).topTrigram.character);
 // output: ䷇ ☵
 ```
 
@@ -515,7 +531,10 @@ Returns a [`Change`](#change) representing the change that would occur if the sp
 **Example**
 ```javascript
 var change = iChing.hexagram(1).changeLines([1,0,1,0,1,0]);
-console.log('%s -> %s %j', change.from.character, change.to.character, change.changingLines);
+console.log('%s -> %s %j', 
+            change.from.character, 
+            change.to.character, 
+            change.changingLines);
 // output: ䷀ -> ䷿ [1,0,1,0,1,0]
 ```
 
@@ -573,7 +592,10 @@ Returns a string containing the binary representation of the change lines. The m
 ```javascript
 var h = iChing.hexagram(5);
 var c = h.changeTo(1);
-console.log('%s -> %s %s', c.from.character, c.to.character, c.binary);
+console.log('%s -> %s %s', 
+            c.from.character, 
+            c.to.character, 
+            c.binary);
 // output: ䷄ -> ䷀ 101000
 ```
 
@@ -585,7 +607,10 @@ Returns an array of integers representing the changing lines. A value of 1 denot
 ```javascript
 var h = iChing.hexagram(5);
 var c = h.changeTo(1);
-console.log('%s -> %s %s', c.from.character, c.to.character, c.changingLines);
+console.log('%s -> %s %s', 
+            c.from.character, 
+            c.to.character, 
+            c.changingLines);
 // output: ䷄ -> ䷀ [ 0, 0, 0, 1, 0, 1 ]
 ```
 
@@ -615,6 +640,10 @@ npm test
 ```
 
 # Change Log
+
+### Version 0.2.1
+
+* Minor documentation cleanup.
 
 ### Version 0.2.0
 
