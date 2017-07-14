@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/strobus/i-ching#readme",
   "dependencies": {
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "seedrandom": "^2.4.3"
   },
   "devDependencies": {
     "expect": "^1.20.2",

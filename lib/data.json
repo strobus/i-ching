@@ -6,13 +6,15 @@
         "Force",
         "The Creative"
       ],
-      "chineseName": "乾 (qián)",
+      "chineseName": "乾",
+      "pinyinName": "qián",
       "character": "☰",
       "attribute": "strong",
       "images": [
         "heaven"
       ],
-      "chineseImage": "天 (tiān)",
+      "chineseImage": "天",
+      "pinyinImage": "tiān",
       "familyRelationship": "father",
       "binary": "111",
       "lines": [
@@ -27,13 +29,15 @@
         "Field",
         "The Receptive"
       ],
-      "chineseName": "坤 (kūn)",
+      "chineseName": "坤",
+      "pinyinName": "kūn",
       "character": "☷",
       "attribute": "devoted, yielding",
       "images": [
         "earth"
       ],
-      "chineseImage": "地 (dì)",
+      "chineseImage": "地",
+      "pinyinImage": "dì",
       "familyRelationship": "mother",
       "binary": "000",
       "lines": [
@@ -48,13 +52,15 @@
         "Shake",
         "The Arousing"
       ],
-      "chineseName": "震 (zhèn)",
+      "chineseName": "震",
+      "pinyinName": "zhèn",
       "character": "☳",
       "attribute": "inciting movement",
       "images": [
         "thunder"
       ],
-      "chineseImage": "雷 (léi)",
+      "chineseImage": "雷",
+      "pinyinImage": "léi",
       "familyRelationship": "first son",
       "binary": "001",
       "lines": [
@@ -69,13 +75,15 @@
         "Gorge",
         "The Abysmal"
       ],
-      "chineseName": "坎 (kǎn)",
+      "chineseName": "坎",
+      "pinyinName": "kǎn",
       "character": "☵",
       "attribute": "dangerous",
       "images": [
         "water"
       ],
-      "chineseImage": "水 (shuǐ)",
+      "chineseImage": "水",
+      "pinyinImage": "shuǐ",
       "familyRelationship": "second son",
       "binary": "010",
       "lines": [
@@ -90,13 +98,15 @@
         "Bound",
         "Keeping Still"
       ],
-      "chineseName": "艮 (gèn)",
+      "chineseName": "艮",
+      "pinyinName": "gèn",
       "character": "☶",
       "attribute": "resting",
       "images": [
         "mountain"
       ],
-      "chineseImage": "山 (shān)",
+      "chineseImage": "山",
+      "pinyinImage": "shān",
       "familyRelationship": "third son",
       "binary": "100",
       "lines": [
@@ -111,14 +121,16 @@
         "Ground",
         "The Gentle"
       ],
-      "chineseName": "巽 (xùn)",
+      "chineseName": "巽",
+      "pinyinName": "xùn",
       "character": "☴",
       "attribute": "penetrating",
       "images": [
         "wind",
         "wood"
       ],
-      "chineseImage": "風 (fēng)",
+      "chineseImage": "風",
+      "pinyinImage": "fēng",
       "familyRelationship": "first daughter",
       "binary": "110",
       "lines": [
@@ -133,13 +145,15 @@
         "Radiance",
         "The Clinging"
       ],
-      "chineseName": "離 (lí)",
+      "chineseName": "離",
+      "pinyinName": "lí",
       "character": "☲",
       "attribute": "light-giving",
       "images": [
         "fire"
       ],
-      "chineseImage": "火 (huǒ)",
+      "chineseImage": "火",
+      "pinyinImage": "huǒ",
       "familyRelationship": "second daughter",
       "binary": "101",
       "lines": [
@@ -154,14 +168,16 @@
         "Open",
         "The Joyous"
       ],
-      "chineseName": "兌 (duì)",
+      "chineseName": "兌",
+      "pinyinName": "duì",
       "character": "☱",
       "attribute": "joyful",
       "images": [
         "swamp",
         "lake"
       ],
-      "chineseImage": "澤 (zé)",
+      "chineseImage": "澤",
+      "pinyinImage": "zé",
       "familyRelationship": "third daughter",
       "binary": "011",
       "lines": [
@@ -178,7 +194,8 @@
         "Force",
         "The Creative"
       ],
-      "chineseName": "乾 (qián)",
+      "chineseName": "乾",
+      "pinyinName": "qián",
       "character": "䷀",
       "topTrigram": 1,
       "bottomTrigram": 1,
@@ -198,7 +215,8 @@
         "Field",
         "The Receptive"
       ],
-      "chineseName": "坤 (kūn)",
+      "chineseName": "坤",
+      "pinyinName": "kūn",
       "character": "䷁",
       "topTrigram": 2,
       "bottomTrigram": 2,
@@ -218,7 +236,8 @@
         "Sprouting",
         "Difficulty at the Beginning"
       ],
-      "chineseName": "屯 (zhūn)",
+      "chineseName": "屯",
+      "pinyinName": "zhūn",
       "character": "䷂",
       "topTrigram": 4,
       "bottomTrigram": 3,
@@ -238,7 +257,8 @@
         "Enveloping",
         "Youthful Folly"
       ],
-      "chineseName": "蒙 (méng)",
+      "chineseName": "蒙",
+      "pinyinName": "méng",
       "character": "䷃",
       "topTrigram": 5,
       "bottomTrigram": 4,
@@ -258,7 +278,8 @@
         "Attending",
         "Waiting"
       ],
-      "chineseName": "需 (xū)",
+      "chineseName": "需",
+      "pinyinName": "xū",
       "character": "䷄",
       "topTrigram": 4,
       "bottomTrigram": 1,
@@ -278,7 +299,8 @@
         "Arguing",
         "Conflict"
       ],
-      "chineseName": "訟 (sòng)",
+      "chineseName": "訟",
+      "pinyinName": "sòng",
       "character": "䷅",
       "topTrigram": 1,
       "bottomTrigram": 4,
@@ -298,7 +320,8 @@
         "Leading",
         "The Army"
       ],
-      "chineseName": "師 (shī)",
+      "chineseName": "師",
+      "pinyinName": "shī",
       "character": "䷆",
       "topTrigram": 2,
       "bottomTrigram": 4,
@@ -318,7 +341,8 @@
         "Grouping",
         "Holding Together [Union]"
       ],
-      "chineseName": "比 (bǐ)",
+      "chineseName": "比",
+      "pinyinName": "bǐ",
       "character": "䷇",
       "topTrigram": 4,
       "bottomTrigram": 2,
@@ -338,7 +362,8 @@
         "Small Accumulating",
         "The Taming Power of the Small"
       ],
-      "chineseName": "小畜 (xiǎo chù)",
+      "chineseName": "小畜",
+      "pinyinName": "xiǎo chù",
       "character": "䷈",
       "topTrigram": 6,
       "bottomTrigram": 1,
@@ -358,7 +383,8 @@
         "Treading",
         "Conduct"
       ],
-      "chineseName": "履 (lǚ)",
+      "chineseName": "履",
+      "pinyinName": "lǚ",
       "character": "䷉",
       "topTrigram": 1,
       "bottomTrigram": 8,
@@ -378,7 +404,8 @@
         "Pervading",
         "Peace"
       ],
-      "chineseName": "泰 (tài)",
+      "chineseName": "泰",
+      "pinyinName": "tài",
       "character": "䷊",
       "topTrigram": 2,
       "bottomTrigram": 1,
@@ -398,7 +425,8 @@
         "Obstruction",
         "Standstill (Stagnation)"
       ],
-      "chineseName": "否 (pǐ)",
+      "chineseName": "否",
+      "pinyinName": "pǐ",
       "character": "䷋",
       "topTrigram": 1,
       "bottomTrigram": 2,
@@ -418,7 +446,8 @@
         "Concording People",
         "Fellowship with Men"
       ],
-      "chineseName": "同人 (tóng rén)",
+      "chineseName": "同人",
+      "pinyinName": "tóng rén",
       "character": "䷌",
       "topTrigram": 1,
       "bottomTrigram": 7,
@@ -438,7 +467,8 @@
         "Great Possessing",
         "Possession in Great Measure"
       ],
-      "chineseName": "大有 (dà yǒu)",
+      "chineseName": "大有",
+      "pinyinName": "dà yǒu",
       "character": "䷍",
       "topTrigram": 7,
       "bottomTrigram": 1,
@@ -458,7 +488,8 @@
         "Humbling",
         "Modesty"
       ],
-      "chineseName": "謙 (qiān)",
+      "chineseName": "謙",
+      "pinyinName": "qiān",
       "character": "䷎",
       "topTrigram": 2,
       "bottomTrigram": 5,
@@ -478,7 +509,8 @@
         "Providing-For",
         "Enthusiasm"
       ],
-      "chineseName": "豫 (yù)",
+      "chineseName": "豫",
+      "pinyinName": "yù",
       "character": "䷏",
       "topTrigram": 3,
       "bottomTrigram": 2,
@@ -497,7 +529,8 @@
       "names": [
         "Following"
       ],
-      "chineseName": "隨 (suí)",
+      "chineseName": "隨",
+      "pinyinName": "suí",
       "character": "䷐",
       "topTrigram": 8,
       "bottomTrigram": 3,
@@ -517,7 +550,8 @@
         "Correcting",
         "Work on What Has Been Spoiled [Decay]"
       ],
-      "chineseName": "蠱 (gǔ)",
+      "chineseName": "蠱",
+      "pinyinName": "gǔ",
       "character": "䷑",
       "topTrigram": 5,
       "bottomTrigram": 6,
@@ -537,7 +571,8 @@
         "Nearing",
         "Approach"
       ],
-      "chineseName": "臨 (lín)",
+      "chineseName": "臨",
+      "pinyinName": "lín",
       "character": "䷒",
       "topTrigram": 2,
       "bottomTrigram": 8,
@@ -557,7 +592,8 @@
         "Viewing",
         "Contemplation (View)"
       ],
-      "chineseName": "觀 (guān)",
+      "chineseName": "觀",
+      "pinyinName": "guān",
       "character": "䷓",
       "topTrigram": 6,
       "bottomTrigram": 2,
@@ -577,7 +613,8 @@
         "Gnawing Bite",
         "Biting Through"
       ],
-      "chineseName": "噬嗑 (shì kè)",
+      "chineseName": "噬嗑",
+      "pinyinName": "shì kè",
       "character": "䷔",
       "topTrigram": 7,
       "bottomTrigram": 3,
@@ -597,7 +634,8 @@
         "Adorning",
         "Grace"
       ],
-      "chineseName": "賁 (bì)",
+      "chineseName": "賁",
+      "pinyinName": "bì",
       "character": "䷕",
       "topTrigram": 5,
       "bottomTrigram": 7,
@@ -617,7 +655,8 @@
         "Stripping",
         "Splitting Apart"
       ],
-      "chineseName": "剝 (bō)",
+      "chineseName": "剝",
+      "pinyinName": "bō",
       "character": "䷖",
       "topTrigram": 5,
       "bottomTrigram": 2,
@@ -637,7 +676,8 @@
         "Returning",
         "Return (The Turning Point"
       ],
-      "chineseName": "復 (fù)",
+      "chineseName": "復",
+      "pinyinName": "fù",
       "character": "䷗",
       "topTrigram": 2,
       "bottomTrigram": 3,
@@ -657,7 +697,8 @@
         "Without Embroiling",
         "Innocence (The Unexpected)"
       ],
-      "chineseName": "無妄 (wú wàng)",
+      "chineseName": "無妄",
+      "pinyinName": "wú wàng",
       "character": "䷘",
       "topTrigram": 1,
       "bottomTrigram": 3,
@@ -677,7 +718,8 @@
         "Great Accumulating",
         "The Taming Power of the Great"
       ],
-      "chineseName": "大畜 (dà chù)",
+      "chineseName": "大畜",
+      "pinyinName": "dà chù",
       "character": "䷙",
       "topTrigram": 5,
       "bottomTrigram": 1,
@@ -697,7 +739,8 @@
         "Swallowing",
         "The Corners of the Mouth (Providing Nourishment)"
       ],
-      "chineseName": "頤 (yí)",
+      "chineseName": "頤",
+      "pinyinName": "yí",
       "character": "䷚",
       "topTrigram": 5,
       "bottomTrigram": 3,
@@ -717,7 +760,8 @@
         "Great Exceeding",
         "Preponderance of the Great"
       ],
-      "chineseName": "大過 (dà guò)",
+      "chineseName": "大過",
+      "pinyinName": "dà guò",
       "character": "䷛",
       "topTrigram": 8,
       "bottomTrigram": 6,
@@ -737,7 +781,8 @@
         "Gorge",
         "The Abysmal (Water)"
       ],
-      "chineseName": "坎 (kǎn)",
+      "chineseName": "坎",
+      "pinyinName": "kǎn",
       "character": "䷜",
       "topTrigram": 4,
       "bottomTrigram": 4,
@@ -757,7 +802,8 @@
         "Radiance",
         "The Clinging, Fire"
       ],
-      "chineseName": "離 (lí)",
+      "chineseName": "離",
+      "pinyinName": "lí",
       "character": "䷝",
       "topTrigram": 7,
       "bottomTrigram": 7,
@@ -777,7 +823,8 @@
         "Conjoining",
         "Influence (Wooing)"
       ],
-      "chineseName": "咸 (xián)",
+      "chineseName": "咸",
+      "pinyinName": "xián",
       "character": "䷞",
       "topTrigram": 8,
       "bottomTrigram": 5,
@@ -797,7 +844,8 @@
         "Persevering",
         "Duration"
       ],
-      "chineseName": "恆 (héng)",
+      "chineseName": "恆",
+      "pinyinName": "héng",
       "character": "䷟",
       "topTrigram": 3,
       "bottomTrigram": 6,
@@ -817,7 +865,8 @@
         "Retiring",
         "Retreat"
       ],
-      "chineseName": "遯 (dùn)",
+      "chineseName": "遯",
+      "pinyinName": "dùn",
       "character": "䷠",
       "topTrigram": 1,
       "bottomTrigram": 5,
@@ -837,7 +886,8 @@
         "Great Invigorating",
         "The Power of the Great"
       ],
-      "chineseName": "大壯 (dà zhuàng)",
+      "chineseName": "大壯",
+      "pinyinName": "dà zhuàng",
       "character": "䷡",
       "topTrigram": 3,
       "bottomTrigram": 1,
@@ -857,7 +907,8 @@
         "Prospering",
         "Progress"
       ],
-      "chineseName": "晉 (jìn)",
+      "chineseName": "晉",
+      "pinyinName": "jìn",
       "character": "䷢",
       "topTrigram": 7,
       "bottomTrigram": 2,
@@ -876,7 +927,8 @@
       "names": [
         "Darkening of the Light"
       ],
-      "chineseName": "明夷 (míng yí)",
+      "chineseName": "明夷",
+      "pinyinName": "míng yí",
       "character": "䷣",
       "topTrigram": 2,
       "bottomTrigram": 7,
@@ -896,7 +948,8 @@
         "Dwelling People",
         "The Family [The Clan]"
       ],
-      "chineseName": "家人 (jiā rén)",
+      "chineseName": "家人",
+      "pinyinName": "jiā rén",
       "character": "䷤",
       "topTrigram": 6,
       "bottomTrigram": 7,
@@ -916,7 +969,8 @@
         "Polarizing",
         "Opposition"
       ],
-      "chineseName": "睽 (kuí)",
+      "chineseName": "睽",
+      "pinyinName": "kuí",
       "character": "䷥",
       "topTrigram": 7,
       "bottomTrigram": 8,
@@ -936,7 +990,8 @@
         "Limping",
         "Obstruction"
       ],
-      "chineseName": "蹇 (jiǎn)",
+      "chineseName": "蹇",
+      "pinyinName": "jiǎn",
       "character": "䷦",
       "topTrigram": 4,
       "bottomTrigram": 5,
@@ -956,7 +1011,8 @@
         "Taking-Apart",
         "Deliverance"
       ],
-      "chineseName": "解 (xiè)",
+      "chineseName": "解",
+      "pinyinName": "xiè",
       "character": "䷧",
       "topTrigram": 3,
       "bottomTrigram": 4,
@@ -976,7 +1032,8 @@
         "Diminishing",
         "Decrease"
       ],
-      "chineseName": "損 (sǔn)",
+      "chineseName": "損",
+      "pinyinName": "sǔn",
       "character": "䷨",
       "topTrigram": 5,
       "bottomTrigram": 8,
@@ -996,7 +1053,8 @@
         "Augmenting",
         "Increase"
       ],
-      "chineseName": "益 (yì)",
+      "chineseName": "益",
+      "pinyinName": "yì",
       "character": "䷩",
       "topTrigram": 6,
       "bottomTrigram": 3,
@@ -1016,7 +1074,8 @@
         "Displacement",
         "Break-through (Resoluteness)"
       ],
-      "chineseName": "夬 (guài)",
+      "chineseName": "夬",
+      "pinyinName": "guài",
       "character": "䷪",
       "topTrigram": 8,
       "bottomTrigram": 1,
@@ -1036,7 +1095,8 @@
         "Coupling",
         "Coming to Meet"
       ],
-      "chineseName": "姤 (gòu)",
+      "chineseName": "姤",
+      "pinyinName": "gòu",
       "character": "䷫",
       "topTrigram": 1,
       "bottomTrigram": 6,
@@ -1056,7 +1116,8 @@
         "Clustering",
         "Gathering Together [Massing]"
       ],
-      "chineseName": "萃 (cuì)",
+      "chineseName": "萃",
+      "pinyinName": "cuì",
       "character": "䷬",
       "topTrigram": 8,
       "bottomTrigram": 2,
@@ -1076,7 +1137,8 @@
         "Ascending",
         "Pushing Upward"
       ],
-      "chineseName": "升 (shēng)",
+      "chineseName": "升",
+      "pinyinName": "shēng",
       "character": "䷭",
       "topTrigram": 2,
       "bottomTrigram": 6,
@@ -1096,7 +1158,8 @@
         "Confining",
         "Oppression (Exhaustion)"
       ],
-      "chineseName": "困 (kùn)",
+      "chineseName": "困",
+      "pinyinName": "kùn",
       "character": "䷮",
       "topTrigram": 8,
       "bottomTrigram": 4,
@@ -1116,7 +1179,8 @@
         "Welling",
         "The Well"
       ],
-      "chineseName": "井 (jǐng)",
+      "chineseName": "井",
+      "pinyinName": "jǐng",
       "character": "䷯",
       "topTrigram": 4,
       "bottomTrigram": 6,
@@ -1136,7 +1200,8 @@
         "Skinning",
         "Revolution (Molting)"
       ],
-      "chineseName": "革 (gé)",
+      "chineseName": "革",
+      "pinyinName": "gé",
       "character": "䷰",
       "topTrigram": 8,
       "bottomTrigram": 7,
@@ -1156,7 +1221,8 @@
         "Holding",
         "The Caldron"
       ],
-      "chineseName": "鼎 (dǐng)",
+      "chineseName": "鼎",
+      "pinyinName": "dǐng",
       "character": "䷱",
       "topTrigram": 7,
       "bottomTrigram": 6,
@@ -1176,7 +1242,8 @@
         "Shake",
         "The Arousing (Shock, Thunder)"
       ],
-      "chineseName": "震 (zhèn)",
+      "chineseName": "震",
+      "pinyinName": "zhèn",
       "character": "䷲",
       "topTrigram": 3,
       "bottomTrigram": 3,
@@ -1196,7 +1263,8 @@
         "Bound",
         "Keeping Still, Mountain"
       ],
-      "chineseName": "艮 (gèn)",
+      "chineseName": "艮",
+      "pinyinName": "gèn",
       "character": "䷳",
       "topTrigram": 5,
       "bottomTrigram": 5,
@@ -1216,7 +1284,8 @@
         "Infiltrating",
         "Development (Gradual Progress)"
       ],
-      "chineseName": "漸 (jiàn)",
+      "chineseName": "漸",
+      "pinyinName": "jiàn",
       "character": "䷴",
       "topTrigram": 6,
       "bottomTrigram": 5,
@@ -1236,7 +1305,8 @@
         "Converting the Maiden",
         "The Marrying Maiden"
       ],
-      "chineseName": "歸妹 (guī mèi)",
+      "chineseName": "歸妹",
+      "pinyinName": "guī mèi",
       "character": "䷵",
       "topTrigram": 3,
       "bottomTrigram": 8,
@@ -1256,7 +1326,8 @@
         "Abouding",
         "Abundance [Fullness]"
       ],
-      "chineseName": "豐 (fēng)",
+      "chineseName": "豐",
+      "pinyinName": "fēng",
       "character": "䷶",
       "topTrigram": 3,
       "bottomTrigram": 7,
@@ -1276,7 +1347,8 @@
         "Sojourning",
         "The Wanderer"
       ],
-      "chineseName": "旅 (lǚ)",
+      "chineseName": "旅",
+      "pinyinName": "lǚ",
       "character": "䷷",
       "topTrigram": 7,
       "bottomTrigram": 5,
@@ -1296,7 +1368,8 @@
         "Ground",
         "The Gentle (The Penetrating, Wind)"
       ],
-      "chineseName": "巽 (xùn)",
+      "chineseName": "巽",
+      "pinyinName": "xùn",
       "character": "䷸",
       "topTrigram": 6,
       "bottomTrigram": 6,
@@ -1316,7 +1389,8 @@
         "Open",
         "The Joyous, Lake"
       ],
-      "chineseName": "兌 (duì)",
+      "chineseName": "兌",
+      "pinyinName": "duì",
       "character": "䷹",
       "topTrigram": 8,
       "bottomTrigram": 8,
@@ -1336,7 +1410,8 @@
         "Dispersing",
         "Dispersion [Dissolution]"
       ],
-      "chineseName": "渙 (huàn)",
+      "chineseName": "渙",
+      "pinyinName": "huàn",
       "character": "䷺",
       "topTrigram": 6,
       "bottomTrigram": 4,
@@ -1356,7 +1431,8 @@
         "Articulating",
         "Limitation"
       ],
-      "chineseName": "節 (jié)",
+      "chineseName": "節",
+      "pinyinName": "jié",
       "character": "䷻",
       "topTrigram": 4,
       "bottomTrigram": 8,
@@ -1376,7 +1452,8 @@
         "Center Returing",
         "Inner Truth"
       ],
-      "chineseName": "中孚 (zhōng fú)",
+      "chineseName": "中孚",
+      "pinyinName": "zhōng fú",
       "character": "䷼",
       "topTrigram": 6,
       "bottomTrigram": 8,
@@ -1396,7 +1473,8 @@
         "Small Exceeding",
         "Preponderance of the Small"
       ],
-      "chineseName": "小過 (xiǎo guò)",
+      "chineseName": "小過",
+      "pinyinName": "xiǎo guò",
       "character": "䷽",
       "topTrigram": 3,
       "bottomTrigram": 5,
@@ -1416,7 +1494,8 @@
         "Already Fording",
         "After Completion"
       ],
-      "chineseName": "既濟 (jì jì)",
+      "chineseName": "既濟",
+      "pinyinName": "jì jì",
       "character": "䷾",
       "topTrigram": 4,
       "bottomTrigram": 7,
@@ -1436,7 +1515,8 @@
         "Not Yet Fording",
         "Before Completion"
       ],
-      "chineseName": "未濟 (wèi jì)",
+      "chineseName": "未濟",
+      "pinyinName": "wèi jì",
       "character": "䷿",
       "topTrigram": 7,
       "bottomTrigram": 4,

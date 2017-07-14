@@ -97,6 +97,31 @@ describe('iChing', () => {
 
   });
 
+  describe('#reading', () => {
+
+    it('should return a Reading object with a hexagram even if no changed lines', () => {
+      // get a reading that has no changed lines
+      let r;
+      while (!r || r.change != null) {
+        r = iChing.reading('get me an unchanged reading!');
+      }
+      expect(r.hexagram).toExist();
+      expect(r.change).toNotExist();
+    });
+
+    it('should return a Reading with a hexagram and a change', () => {
+      // get a reading that has changed lines
+      let r;
+      while (!r || r.change == null) {
+        r = iChing.reading('get me a reading that has changes!');
+      }
+      expect(r.hexagram).toExist();
+      expect(r.change).toExist();
+      expect(r.change.from.number).toBe(r.hexagram.number);
+      expect(parseInt(r.change.binary,2)).toBe(parseInt(r.hexagram.binary,2) ^ parseInt(r.change.to.binary,2));
+    });
+  });
+
   describe('#asGraph', () => {
 
     it('should return an object with 72 nodes and 4160 edges', () => {
@@ -142,7 +167,8 @@ describe('Hexagram', () => {
       expect(h.number).toBe(1);
       expect(h.names).toInclude('Force');
       expect(h.names).toInclude('The Creative');
-      expect(h.chineseName).toBe('乾 (qián)');
+      expect(h.chineseName).toBe('乾');
+      expect(h.pinyinName).toBe('qián');
       expect(h.character).toBe('䷀');
       expect(h.binary).toBe('111111');
       expect(h.lines.length).toBe(6);
@@ -171,6 +197,15 @@ describe('Hexagram', () => {
     })
   });
 
+  describe('#changeLines', () => {
+    it ('should return a change with specified lines changed', () => {
+      let h = iChing.hexagram(1);
+      let c = h.changeLines([1,0,1,0,1,0]);
+      expect(c.to.number).toBe(64);
+      expect(c.binary).toBe('010101');
+    });
+  });
+
   describe('#changes', () => {
     if('should return 63 changes', () => {
       let h = iChing.hexagram(1);
@@ -192,7 +227,8 @@ describe('Trigram', () => {
       expect(t.number).toBe(2);
       expect(t.names).toInclude('Field');
       expect(t.names).toInclude('The Receptive');
-      expect(t.chineseName).toBe('坤 (kūn)');
+      expect(t.chineseName).toBe('坤');
+      expect(t.pinyinName).toBe('kūn');
       expect(t.character).toBe('☷');
       expect(t.binary).toBe('000');
       expect(t.lines.length).toBe(3);
@@ -201,7 +237,8 @@ describe('Trigram', () => {
       expect(t.attribute).toBe('devoted, yielding');
       expect(t.images.length).toBe(1);
       expect(t.images).toContain('earth');
-      expect(t.chineseImage).toBe('地 (dì)');
+      expect(t.chineseImage).toBe('地');
+      expect(t.pinyinImage).toBe('dì');
       expect(t.familyRelationship).toBe('mother');
     });
   });
