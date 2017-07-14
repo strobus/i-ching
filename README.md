@@ -641,6 +641,10 @@ npm test
 
 # Change Log
 
+### Version 0.3.2
+
+* Fixed minor logical error in yarrow stalk operation.
+
 ### Version 0.3.1
 
 * Changed `iChing.reading` method to `iChing.ask`.
