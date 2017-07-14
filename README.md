@@ -179,16 +179,6 @@ console.log(iChing.asGraph());
 
 The names of the hexagram-to-hexagram edges are the binary representation of the changing lines between those hexagrams. For more information see the [`Change.binary`](#change-binary) property.
 
-#### iChing.hexagram(number)
-
-Returns the [`Hexagram`](#hexagram) corresponding to the `number`. The `number` must be an integer from 1 to 64 inclusive. Hexagrams are numbered according to the [traditional sequence](https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching).
-
-**Example**
-```javascript
-console.log(iChing.hexagram(22).names);
-// output: [ 'Adorning', 'Grace' ]
-```
-
 #### iChing.ask(question)
 
 Returns a [`Reading`](#reading) with randomness seeded by the supplied `question`. The question can be any javascript type including strings, numbers, objects, and arrays. Supplying the same input twice will not, however, result in the same reading.
@@ -204,6 +194,16 @@ console.log('%d -> %d %j',
             reading.change.changingLines);
 // output (will vary due to randomness):
 ䷀ -> ䷾ [0,1,0,1,0,1]
+```
+
+#### iChing.hexagram(number)
+
+Returns the [`Hexagram`](#hexagram) corresponding to the `number`. The `number` must be an integer from 1 to 64 inclusive. Hexagrams are numbered according to the [traditional sequence](https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching).
+
+**Example**
+```javascript
+console.log(iChing.hexagram(22).names);
+// output: [ 'Adorning', 'Grace' ]
 ```
 
 #### iChing.trigram(number)
