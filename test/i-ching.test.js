@@ -1,6 +1,7 @@
 const expect = require('expect');
 const iChing = require('../lib/i-ching.js');
 const data = require('../lib/data.json');
+const _ = require('lodash');
 
 describe('iChing', () => {
 
@@ -97,7 +98,7 @@ describe('iChing', () => {
 
   });
 
-  describe('#reading', () => {
+  describe('#ask', () => {
 
     it('should return a Reading object with a hexagram even if no changed lines', () => {
       // get a reading that has no changed lines
@@ -240,6 +241,41 @@ describe('Trigram', () => {
       expect(t.chineseImage).toBe('地');
       expect(t.pinyinImage).toBe('dì');
       expect(t.familyRelationship).toBe('mother');
+    });
+  });
+
+  describe('#hexagrams', () => {
+    it('should return 15 hexagrams when undefined is passed', () => {
+      let t = iChing.trigram(2);
+      let hexes = t.hexagrams();
+      expect(hexes.length).toBe(15);
+
+      _.forEach(hexes, (h) => {
+        let test = (h.topTrigram.number == t.number) || (h.bottomTrigram.number == t.number);
+        expect(test).toBe(true);
+      });
+    });
+
+    it('should return 8 hexagrams when "top" is passed', () => {
+      let t = iChing.trigram(2);
+      let hexes = t.hexagrams('top');
+      expect(hexes.length).toBe(8);
+
+      _.forEach(hexes, (h) => {
+        let test = (h.topTrigram.number == t.number);
+        expect(test).toBe(true);
+      });
+    });
+
+    it('should return 8 hexagrams when "bottom" is passed', () => {
+      let t = iChing.trigram(2);
+      let hexes = t.hexagrams('bottom');
+      expect(hexes.length).toBe(8);
+
+      _.forEach(hexes, (h) => {
+        let test = (h.bottomTrigram.number == t.number);
+        expect(test).toBe(true);
+      });
     });
   });
 });
