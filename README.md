@@ -118,7 +118,7 @@ npm install --save i-ching
 
 # API
 
-#### [iChing Module](#iching-module)
+#### [iChing Module](#iching-m)
 
 [Properties](#iching-properties)
 * [`iChing.hexagrams`](#iching-hexagrams)
@@ -188,7 +188,7 @@ npm install --save i-ching
   
   
 
-## <a name="iching-module"></a>iChing Module
+## <a name="iching-m"></a>iChing Module
 
 ```javascript
 var iChing = require('i-ching');
@@ -353,7 +353,7 @@ Returns an array of [`Trigram`](#trigram)s ordered according to the `name`d trad
 
 The `Change` class represents a change from one hexagram to another.
 
-### Properties
+### <a name="change-properties"></a>Properties
 
 #### <a name="change-binary"></a>Change.binary
 
@@ -722,7 +722,7 @@ console.log(iChing.trigram(5).pinyinImage);
 // output: shān
 ```
 
-#### <a name="trigram-name"></a>Trigram.pinyinName
+#### <a name="trigram-pinyinname"></a>Trigram.pinyinName
 
 Returns a string containing the [pinyin](https://en.wikipedia.org/wiki/Pinyin) representation of the Chinese name of the trigram.
 
