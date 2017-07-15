@@ -104,23 +104,99 @@ Change {
 */
 ```
 
+
+
+
 # Installation
 
 ```shell
 npm install --save i-ching
 ```
 
+
+
+
 # API
 
-## iChing Module
+#### [iChing Module](#iching-module)
+
+[Properties](#iching-properties)
+* [`iChing.hexagrams`](#iching-hexagrams)
+* [`iChing.trigrams`](#iching-trigrams)
+
+[Methods](#iching-methods)
+* [`iChing.asGraph()`](#iching-asgraph)
+* [`iChing.ask()`](#iching-ask)
+* [`iChing.hexagram(number)`](#iching-hexagram)
+* [`iChing.trigram(number)`](#iching-trigram)
+* [`iChing.trigramSequence(name)`](#iching-trigramsequence)
+
+#### [Change Class](#change)
+
+[Properties](#change-properties)
+* [`Change.binary`](#change-binary)
+* [`Change.changingLines`](#change-changinglines)
+* [`Change.from`](#change-from)
+* [`Change.to`](#change-to)
+
+#### [Hexagram Class](#hexagram)
+
+[Properties](#hexagram-properties)
+* [`Hexagram.binary`](#hexagram-binary)
+* [`Hexagram.bottomTrigram`](#hexagram-bottomtrigram)
+* [`Hexagram.changes`](#hexagram-changes)
+* [`Hexagram.character`](#hexagram-character)
+* [`Hexagram.chineseName`](#hexagram-chinesename)
+* [`Hexagram.lines`](#hexagram-lines)
+* [`Hexagram.names`](#hexagram-names)
+* [`Hexagram.number`](#hexagram-number)
+* [`Hexagram.pinyinName`](#hexagram-pinyinname)
+* [`Hexagram.topTrigram`](#hexagram-toptrigram)
+  
+[Methods](#hexagram-methods)
+* [`Hexagram.changeLines(lines)`](#hexagram-changelines)
+* [`Hexagram.changeTo(number)`](#hexagram-changeto)
+
+#### [Reading Class](#reading)
+
+[Properties](#reading-properties)
+* [`Reading.change`](#reading-change)
+* [`Reading.hexagram`](#reading-hexagram)
+
+#### [Trigram Class](#trigram)
+
+[Properties](#trigram-properties)
+* [`Trigram.attribute`](#trigram-attribute)
+* [`Trigram.binary`](#trigram-binary)
+* [`Trigram.character`](#trigram-character)
+* [`Trigram.chineseImage`](#trigram-chineseimage)
+* [`Trigram.chineseName`](#trigram-chinesename)
+* [`Trigram.familyRelationship`](#trigram-familyrelationship)
+* [`Trigram.images`](#trigram-images)
+* [`Trigram.lines`](#trigram-lines)
+* [`Trigram.names`](#trigram-names)
+* [`Trigram.number`](#trigram-number)
+* [`Trigram.pinyinImage`](#trigram-pinyinimage)
+* [`Trigram.pinyinName`](#trigram-pinyinname)
+
+[Methods](#trigram-methods)
+* [`Trigram.hexagrams(position)`](#trigram-hexagrams)
+
+
+
+
+  
+  
+
+## <a name="iching-module"></a>iChing Module
 
 ```javascript
 var iChing = require('i-ching');
 ```
 
-### Properties
+### <a name="iching-properties"></a>Properties
 
-#### iChing.hexagrams
+#### <a name="iching-hexagrams"></a>iChing.hexagrams
 
 Returns an array containing the 64 [`Hexagram`](#hexagram)s.
 
@@ -130,7 +206,7 @@ console.log(iChing.hexagrams.length);
 // output: 64
 ```
 
-#### iChing.trigrams
+#### <a name="iching-trigrams"></a>iChing.trigrams
 
 Returns an array containing the 8 [`Trigram`](#trigram)s.
 
@@ -140,9 +216,9 @@ console.log(iChing.trigrams.length);
 // output: 8
 ```
 
-### Methods
+### <a name="iching-methods"></a>Methods
 
-#### iChing.asGraph()
+#### <a name="iching-asgraph"></a>iChing.asGraph()
 
 Returns an object suitable for graph applications.
 
@@ -179,9 +255,9 @@ console.log(iChing.asGraph());
 
 The names of the hexagram-to-hexagram edges are the binary representation of the changing lines between those hexagrams. For more information see the [`Change.binary`](#change-binary) property.
 
-#### iChing.ask(question)
+#### <a name="iching-ask"></a>iChing.ask(question)
 
-Returns a [`Reading`](#reading) with randomness seeded by the supplied `question`. The question can be any javascript type including strings, numbers, objects, and arrays. Supplying the same input twice will not, however, result in the same reading.
+Returns a [`Reading`](#reading) with randomness seeded by the supplied `question`. The question can be any javascript type including strings, numbers, objects, arrays, and even `undefined`. Supplying the same `question` a second time will not, however, result in the same reading.
 
 The reading is generated using the yarrow stalk method described in Wilhelm's translation. See [references](#references). 
 
@@ -196,7 +272,7 @@ console.log('%d -> %d %j',
 ䷀ -> ䷾ [0,1,0,1,0,1]
 ```
 
-#### iChing.hexagram(number)
+#### <a name="iching-hexagram"></a>iChing.hexagram(number)
 
 Returns the [`Hexagram`](#hexagram) corresponding to the `number`. The `number` must be an integer from 1 to 64 inclusive. Hexagrams are numbered according to the [traditional sequence](https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching).
 
@@ -206,7 +282,7 @@ console.log(iChing.hexagram(22).names);
 // output: [ 'Adorning', 'Grace' ]
 ```
 
-#### iChing.trigram(number)
+#### <a name="iching-trigram"></a>iChing.trigram(number)
 
 Returns the [`Trigram`](#trigram) corresponding to the `number`. The `number` must be an integer from 1 to 8 inclusive. Trigrams are numbered as follows:
 
@@ -225,7 +301,7 @@ console.log(iChing.trigram(1).names);
 // output: [ 'Force', 'The Creative' ]
 ```
 
-#### iChing.trigramSequence(name)
+#### <a name="iching-trigramsequence"></a>iChing.trigramSequence(name)
 
 Returns an array of [`Trigram`](#trigram)s ordered according to the `name`d traditional sequence. Possible values for `name` and their corresponding outputs are as follows.
 
@@ -265,320 +341,15 @@ Returns an array of [`Trigram`](#trigram)s ordered according to the `name`d trad
 
 7\. ☴ Ground, The Gentle
 
-## <a name="trigram"></a>Trigram
 
-The `Trigram` class represents a trigram of the I Ching. There are 8 possible `Trigram` instances.
 
-### Properties
 
-#### Trigram.attribute
 
-Returns a string containing the "attribute" of the trigram.
 
-**Example**
-```javascript
-console.log(iChing.trigram(1).attribute);
-// output: strong
-```
 
-#### Trigram.binary
 
-Returns a string containing the binary representation of the lines of the trigram. The most significant digit is the top line and the least significant digit is the bottom line.
 
-**Example**
-```javascript
-console.log('%s %s', 
-            iChing.trigram(3).character, 
-            iChing.trigram(3).binary);
-// output: ☳ 001
-```
-
-#### Trigram.character
-
-Returns a string containing the trigram character, which is a pictogram representing the lines of the trigram. The characters codes for these characters range from `\u2630` to `\u2637` (hexadecimal character codes).
-
-**Example**
-```javascript
-var c = iChing.trigram(2).character;
-console.log('%s \\u%s', c, c.charCodeAt(0).toString(16));
-// output: ☷ \u2637
-```
-#### Trigram.chineseImage
-
-Returns a string containing the Chinese "image" of the trigram.
-
-**Example**
-```javascript
-console.log(iChing.trigram(5).chineseImage);
-// output: 山
-```
-
-#### Trigram.chineseName
-
-Returns a string containing the Chinese name of the trigram.
-
-**Example**
-```javascript
-console.log(iChing.trigram(5).chineseName);
-// output: 艮
-```
-
-#### Trigram.familyRelationship
-
-Returns a string containing the "family relationship" represented by the trigram.
-
-**Example**
-```javascript
-console.log(iChing.trigram(6).familyRelationship);
-// output: first daughter
-```
-
-#### Trigram.images
-
-Returns an array of strings containing the "images" of the trigram. These are the inherent properties of nature represented by the trigram.
-
-**Example**
-```javascript
-console.log(iChing.trigram(6).images);
-// output: [ 'wind', 'wood' ]
-```
-
-#### Trigram.lines
-
-Returns an array of integers representing the lines of the trigram. A value of 1 denotes a solid line. A value of 0 denotes a broken line. Lines are represented from bottom of the trigram to top in the array.
-
-**Example**
-```javascript
-console.log('%s %j', 
-            iChing.trigram(3).character, 
-            iChing.trigram(3).lines);
-// output: ☳ [1,0,0]
-```
-
-#### Trigram.names
-
-Returns an array of strings containing the names of the trigram.
-
-**Example**
-```javascript
-console.log(iChing.trigram(2).names);
-// output: [ 'Field', 'The Receptive' ]
-```
-
-#### Trigram.number
-
-Returns an integer which is the trigram number. Trigrams are numbered as follows:
-
-1. ☰ Force, The Creative
-1. ☷ Field, The Receptive
-1. ☳ Shake, The Arousing
-1. ☵ Gorge, The Abysmal
-1. ☶ Bound, Keeping Still
-1. ☴ Ground, The Gentle
-1. ☲ Radiance, The Clinging
-1. ☱ Open, The Joyous
-
-**Example**
-```javascript
-console.log(iChing.trigram(1).number);
-// output: 1
-```
-
-#### Trigram.pinyinImage
-
-Returns a string containing the pinyin representation of the Chinese "image" of the trigram.
-
-**Example**
-```javascript
-console.log(iChing.trigram(5).pinyinImage);
-// output: shān
-```
-
-#### Trigram.pinyinName
-
-Returns a string containing the [pinyin](https://en.wikipedia.org/wiki/Pinyin) representation of the Chinese name of the trigram.
-
-**Example**
-```javascript
-console.log(iChing.trigram(5).pinyinName);
-// output: gèn
-```
-
-
-## <a name="hexagram"></a>Hexagram
-
-The `Hexagram` class represents a hexagram of the I Ching. There are 64 possible `Hexagram` instances.
-
-### Properties
-
-#### Hexagram.binary
-
-Returns a string containing the binary representation of the lines of the hexagram. The most significant digit is the top line and the least significant digit is the bottom line.
-
-**Example**
-```javascript
-console.log('%s %s', 
-            iChing.hexagram(63).character, 
-            iChing.hexagram(63).binary);
-// output: ䷾ 010101
-```
-
-#### Hexagram.bottomTrigram
-
-Returns a `Trigram` representing the bottom 3 lines of the hexagram.
-
-**Example**
-```javascript
-console.log('%s %s', 
-            iChing.hexagram(8).character, 
-            iChing.hexagram(8).bottomTrigram.character);
-// output: ䷇ ☷
-```
-
-#### Hexagram.changes
-
-Returns an array of [`Change`](#change)s representing the 63 possible changes to the other hexagrams of the I Ching.
-
-**Example**
-```javascript
-var h = iChing.hexagram(48);
-var c = h.changes[0];
-console.log('%s -> %s %s', h.character, c.to.character, c.binary);
-// output: ䷯ -> ䷀ 101001
-```
-
-#### Hexagram.character
-
-Returns a string containing the hexagram character, which is a pictogram representing the lines of the hexagram. The characters codes for these characters range from `\u4dc0` to `\u4dff` (hexadecimal character codes).
-
-**Example**
-```javascript
-var c = iChing.hexagram(2).character;
-console.log('%s \\u%s', c, c.charCodeAt(0).toString(16));
-// output ䷁ \u4dc0
-```
-
-#### Hexagram.chineseName
-
-Returns a string containing the Chinese name of the hexagram.
-
-**Example**
-```javascript
-console.log(iChing.hexagram(5).chineseName);
-// output: 需
-```
-
-#### Hexagram.lines
-
-Returns an array of integers representing the lines of the hexagram. A value of 1 denotes a solid line. A value of 0 denotes a broken line. Lines are represented from the bottom of the hexagram to top in the array.
-
-**Example**
-```javascript
-console.log('%s %j', 
-            iChing.hexagram(64).character, 
-            iChing.hexagram(64).lines);
-// output: ䷿ [0,1,0,1,0,1]
-```
-
-#### Hexagram.names
-
-Returns an array of strings containing the names of the hexagram.
-
-**Example**
-```javascript
-console.log(iChing.hexagram(31).names);
-// output: [ 'Conjoining', 'Influence (Wooing)' ]
-```
-
-#### Hexagram.number
-
-Returns an integer which is the hexagram number. Hexagrams are numbered according to the [traditional sequence](https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching).
-
-**Example**
-```javascript
-console.log(iChing.hexagram(15).number);
-// output: 15
-```
-
-#### Hexagram.pinyinName
-
-Returns a string containing the [pinyin](https://en.wikipedia.org/wiki/Pinyin) representation of the Chinese name of the hexagram.
-
-**Example**
-```javascript
-console.log(iChing.hexagram(5).pinyinName);
-// output: xū
-```
-
-#### Hexagram.topTrigram
-
-Returns a [`Trigram`](#trigram) representing the top 3 lines of the hexagram.
-
-**Example**
-```javascript
-console.log('%s %s', 
-            iChing.hexagram(8).character, 
-            iChing.hexagram(8).topTrigram.character);
-// output: ䷇ ☵
-```
-
-### Methods
-
-#### Hexagram.changeLines(lines)
-
-Returns a [`Change`](#change) representing the change that would occur if the specified `lines` of the hexagram were changed. The `lines` parameter must be an `Array` with 6 elements whose values are either 1 or 0. Element zero of the `lines` array represents the bottom line of the hexagram and element five represents the top line. A value of 1 means the corresponding line changes. A value of 0 means that the corresponding line does not change.
-
-**Example**
-```javascript
-var change = iChing.hexagram(1).changeLines([1,0,1,0,1,0]);
-console.log('%s -> %s %j', 
-            change.from.character, 
-            change.to.character, 
-            change.changingLines);
-// output: ䷀ -> ䷿ [1,0,1,0,1,0]
-```
-
-#### Hexagram.changeTo(number)
-
-Returns a [`Change`](#change) representing the change from the current hexagram to the hexagram specified by `number`. The `number` must be an integer from 1 to 64 inclusive. If `number` is the number of the current hexagram, then the method returns `null`. Hexagrams are numbered according to the [traditional sequence](https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching).
-
-**Example**
-```javascript
-console.log(iChing.hexagram(5).changeTo(1).changingLines);
-// output: [ 0, 0, 0, 1, 0, 1 ]
-```
-
-## <a name="reading"></a>Reading
-
-The `Reading` class represents the results of a consultation with the Oracle. The yarrow stalk method is used to obtain the reading, as described in Wilhelm's translation. See [references](#references).
-
-### Properties
-
-#### Reading.hexagram
-
-Returns the [`Hexagram`](#hexagram) that was divined by the Oracle based on the question.
-
-**Example**
-```javascript
-var reading = iChing.ask('which hexagram is the best for me?');
-console.log(reading.hexagram.names);
-// output (will very due to randomness in the reading):
-[ 'Great Exceeding', 'Preponderance of the Great' ]
-```
-
-#### Reading.change
-
-Returns the [`Change`](#change) that was divined by the Oracle of the main hexagram of the reading to one of the other hexagrams of the I Ching. This property will return `null` if there are no changed lines in the reading.
-
-**Example**
-```javascript
-var reading = iChing.ask('what am I becoming?');
-console.log(reading.change ? reading.change.to.number : 'nothing!');
-// output (will vary due to randomness in the reading):
-[ 'Bound', 'Keeping Still, Mountain' ]
-```
-
-## <a name="change"></a>Change
+## <a name="change"></a>Change Class
 
 The `Change` class represents a change from one hexagram to another.
 
@@ -599,7 +370,7 @@ console.log('%s -> %s %s',
 // output: ䷄ -> ䷀ 101000
 ```
 
-#### Change.changingLines
+#### <a name="change-changinglines"></a>Change.changingLines
 
 Returns an array of integers representing the changing lines. A value of 1 denotes a changed line. A value of 0 denotes an unchanged line. Lines are represented from the bottom of the hexagram to top in the array.
 
@@ -614,7 +385,7 @@ console.log('%s -> %s %s',
 // output: ䷄ -> ䷀ [ 0, 0, 0, 1, 0, 1 ]
 ```
 
-#### Change.from
+#### <a name="change-from"></a>Change.from
 
 Returns the [`Hexagram`](#hexagram) from which the change originated.
 
@@ -624,7 +395,7 @@ console.log(iChing.hexagram(5).changeTo(1).from.number);
 // output: 5
 ```
 
-#### Change.to
+#### <a name="change-to"></a>Change.to
 
 Returns the [`Hexagram`](#hexagram) which results from the change.
 
@@ -633,33 +404,401 @@ Returns the [`Hexagram`](#hexagram) which results from the change.
 console.log(iChing.hexagram(5).changeTo(1).to.number);
 // output: 1
 ```
+
+
+
+
+
+
+
+## <a name="hexagram"></a>Hexagram Class
+
+The `Hexagram` class represents a hexagram of the I Ching. There are 64 possible `Hexagram` instances.
+
+### <a name="hexagram-properties"></a>Properties
+
+#### <a name="hexagram-binary"></a>Hexagram.binary
+
+Returns a string containing the binary representation of the lines of the hexagram. The most significant digit is the top line and the least significant digit is the bottom line.
+
+**Example**
+```javascript
+console.log('%s %s', 
+            iChing.hexagram(63).character, 
+            iChing.hexagram(63).binary);
+// output: ䷾ 010101
+```
+
+#### <a name="hexagram-bottomtrigram"></a>Hexagram.bottomTrigram
+
+Returns a `Trigram` representing the bottom 3 lines of the hexagram.
+
+**Example**
+```javascript
+console.log('%s %s', 
+            iChing.hexagram(8).character, 
+            iChing.hexagram(8).bottomTrigram.character);
+// output: ䷇ ☷
+```
+
+#### <a name="hexagram-changes"></a>Hexagram.changes
+
+Returns an array of [`Change`](#change)s representing the 63 possible changes to the other hexagrams of the I Ching.
+
+**Example**
+```javascript
+var h = iChing.hexagram(48);
+var c = h.changes[0];
+console.log('%s -> %s %s', h.character, c.to.character, c.binary);
+// output: ䷯ -> ䷀ 101001
+```
+
+#### <a name="hexagram-character"></a>Hexagram.character
+
+Returns a string containing the hexagram character, which is a pictogram representing the lines of the hexagram. The characters codes for these characters range from `\u4dc0` to `\u4dff` (hexadecimal character codes).
+
+**Example**
+```javascript
+var c = iChing.hexagram(2).character;
+console.log('%s \\u%s', c, c.charCodeAt(0).toString(16));
+// output ䷁ \u4dc0
+```
+
+#### <a name="hexagram-chinesename"></a>Hexagram.chineseName
+
+Returns a string containing the Chinese name of the hexagram.
+
+**Example**
+```javascript
+console.log(iChing.hexagram(5).chineseName);
+// output: 需
+```
+
+#### <a name="hexagram-lines"></a>Hexagram.lines
+
+Returns an array of integers representing the lines of the hexagram. A value of 1 denotes a solid line. A value of 0 denotes a broken line. Lines are represented from the bottom of the hexagram to top in the array.
+
+**Example**
+```javascript
+console.log('%s %j', 
+            iChing.hexagram(64).character, 
+            iChing.hexagram(64).lines);
+// output: ䷿ [0,1,0,1,0,1]
+```
+
+#### <a name="hexagram-names"></a>Hexagram.names
+
+Returns an array of strings containing the names of the hexagram.
+
+**Example**
+```javascript
+console.log(iChing.hexagram(31).names);
+// output: [ 'Conjoining', 'Influence (Wooing)' ]
+```
+
+#### <a name="hexagram-number"></a>Hexagram.number
+
+Returns an integer which is the hexagram number. Hexagrams are numbered according to the [traditional sequence](https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching).
+
+**Example**
+```javascript
+console.log(iChing.hexagram(15).number);
+// output: 15
+```
+
+#### <a name="hexagram-pinyinname"></a>Hexagram.pinyinName
+
+Returns a string containing the [pinyin](https://en.wikipedia.org/wiki/Pinyin) representation of the Chinese name of the hexagram.
+
+**Example**
+```javascript
+console.log(iChing.hexagram(5).pinyinName);
+// output: xū
+```
+
+#### <a name="hexagram-toptrigram"></a>Hexagram.topTrigram
+
+Returns a [`Trigram`](#trigram) representing the top 3 lines of the hexagram.
+
+**Example**
+```javascript
+console.log('%s %s', 
+            iChing.hexagram(8).character, 
+            iChing.hexagram(8).topTrigram.character);
+// output: ䷇ ☵
+```
+
+### <a name="hexagram-methods"></a>Methods
+
+#### <a name="hexagram-changelines"></a>Hexagram.changeLines(lines)
+
+Returns a [`Change`](#change) representing the change that would occur if the specified `lines` of the hexagram were changed. The `lines` parameter must be an `Array` with 6 elements whose values are either 1 or 0. Element zero of the `lines` array represents the bottom line of the hexagram and element five represents the top line. A value of 1 means the corresponding line changes. A value of 0 means that the corresponding line does not change.
+
+**Example**
+```javascript
+var change = iChing.hexagram(1).changeLines([1,0,1,0,1,0]);
+console.log('%s -> %s %j', 
+            change.from.character, 
+            change.to.character, 
+            change.changingLines);
+// output: ䷀ -> ䷿ [1,0,1,0,1,0]
+```
+
+#### <a name="hexagram-changeto"></a>Hexagram.changeTo(number)
+
+Returns a [`Change`](#change) representing the change from the current hexagram to the hexagram specified by `number`. The `number` must be an integer from 1 to 64 inclusive. If `number` is the number of the current hexagram, then the method returns `null`. Hexagrams are numbered according to the [traditional sequence](https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching).
+
+**Example**
+```javascript
+console.log(iChing.hexagram(5).changeTo(1).changingLines);
+// output: [ 0, 0, 0, 1, 0, 1 ]
+```
+
+
+
+
+
+## <a name="reading"></a>Reading Class
+
+The `Reading` class represents the results of a consultation with the Oracle. The yarrow stalk method is used to obtain the reading, as described in Wilhelm's translation. See [references](#references).
+
+### <a name="reading-properties"></a>Properties
+
+#### <a name="reading-change"></a>Reading.change
+
+Returns the [`Change`](#change) that was divined by the Oracle of the main hexagram of the reading to one of the other hexagrams of the I Ching. This property will return `null` if there are no changed lines in the reading.
+
+**Example**
+```javascript
+var reading = iChing.ask('what am I becoming?');
+console.log(reading.change ? reading.change.to.number : 'nothing!');
+// output (will vary due to randomness in the reading):
+[ 'Bound', 'Keeping Still, Mountain' ]
+```
+
+#### <a name="reading-hexagram"></a>Reading.hexagram
+
+Returns the [`Hexagram`](#hexagram) that was divined by the Oracle based on the question.
+
+**Example**
+```javascript
+var reading = iChing.ask('which hexagram is the best for me?');
+console.log(reading.hexagram.names);
+// output (will very due to randomness in the reading):
+[ 'Great Exceeding', 'Preponderance of the Great' ]
+```
+
+
+
+
+
+
+## <a name="trigram"></a>Trigram Class
+
+The `Trigram` class represents a trigram of the I Ching. There are 8 possible `Trigram` instances.
+
+### <a name="trigram-properties"></a>Properties
+
+#### <a name="trigram-attribute"></a>Trigram.attribute
+
+Returns a string containing the "attribute" of the trigram.
+
+**Example**
+```javascript
+console.log(iChing.trigram(1).attribute);
+// output: strong
+```
+
+#### <a name="trigram-binary"></a>Trigram.binary
+
+Returns a string containing the binary representation of the lines of the trigram. The most significant digit is the top line and the least significant digit is the bottom line.
+
+**Example**
+```javascript
+console.log('%s %s', 
+            iChing.trigram(3).character, 
+            iChing.trigram(3).binary);
+// output: ☳ 001
+```
+
+#### <a name="trigram-character"></a>Trigram.character
+
+Returns a string containing the trigram character, which is a pictogram representing the lines of the trigram. The characters codes for these characters range from `\u2630` to `\u2637` (hexadecimal character codes).
+
+**Example**
+```javascript
+var c = iChing.trigram(2).character;
+console.log('%s \\u%s', c, c.charCodeAt(0).toString(16));
+// output: ☷ \u2637
+```
+#### <a name="trigram-chineseimage"></a>Trigram.chineseImage
+
+Returns a string containing the Chinese "image" of the trigram.
+
+**Example**
+```javascript
+console.log(iChing.trigram(5).chineseImage);
+// output: 山
+```
+
+#### <a name="trigram-chinesename"></a>Trigram.chineseName
+
+Returns a string containing the Chinese name of the trigram.
+
+**Example**
+```javascript
+console.log(iChing.trigram(5).chineseName);
+// output: 艮
+```
+
+#### <a name="trigram-familyrelationship"></a>Trigram.familyRelationship
+
+Returns a string containing the "family relationship" represented by the trigram.
+
+**Example**
+```javascript
+console.log(iChing.trigram(6).familyRelationship);
+// output: first daughter
+```
+
+#### <a name="trigram-images"></a>Trigram.images
+
+Returns an array of strings containing the "images" of the trigram. These are the inherent properties of nature represented by the trigram.
+
+**Example**
+```javascript
+console.log(iChing.trigram(6).images);
+// output: [ 'wind', 'wood' ]
+```
+
+#### <a name="trigram-lines"></a>Trigram.lines
+
+Returns an array of integers representing the lines of the trigram. A value of 1 denotes a solid line. A value of 0 denotes a broken line. Lines are represented from bottom of the trigram to top in the array.
+
+**Example**
+```javascript
+console.log('%s %j', 
+            iChing.trigram(3).character, 
+            iChing.trigram(3).lines);
+// output: ☳ [1,0,0]
+```
+
+#### <a name="trigram-names"></a>Trigram.names
+
+Returns an array of strings containing the names of the trigram.
+
+**Example**
+```javascript
+console.log(iChing.trigram(2).names);
+// output: [ 'Field', 'The Receptive' ]
+```
+
+#### <a name="trigram-number"></a>Trigram.number
+
+Returns an integer which is the trigram number. Trigrams are numbered according to the order presented in the Wilhelm translation (see [references](#references)) as follows:
+
+1. ☰ Force, The Creative
+1. ☷ Field, The Receptive
+1. ☳ Shake, The Arousing
+1. ☵ Gorge, The Abysmal
+1. ☶ Bound, Keeping Still
+1. ☴ Ground, The Gentle
+1. ☲ Radiance, The Clinging
+1. ☱ Open, The Joyous
+
+**Example**
+```javascript
+console.log(iChing.trigram(1).number);
+// output: 1
+```
+
+#### <a name="trigram-pinyinimage"></a>Trigram.pinyinImage
+
+Returns a string containing the pinyin representation of the Chinese "image" of the trigram.
+
+**Example**
+```javascript
+console.log(iChing.trigram(5).pinyinImage);
+// output: shān
+```
+
+#### <a name="trigram-name"></a>Trigram.pinyinName
+
+Returns a string containing the [pinyin](https://en.wikipedia.org/wiki/Pinyin) representation of the Chinese name of the trigram.
+
+**Example**
+```javascript
+console.log(iChing.trigram(5).pinyinName);
+// output: gèn
+```
+
+### <a name="trigram-methods"></a>Methods
+
+#### <a name="trigram-hexagrams"></a>Trigram.hexagrams(position)
+
+Returns an array of [`Hexagram`](#hexagram)s that have the current trigram in the specified `position`. Valid values for `position` are as follows:
+
+* `'top'` - returns the 8 hexagrams that have the current trigram in the top position. 
+* `'bottom'` - returns the 8 hexagrams that have the current trigram in bottom position. 
+* `undefined` - returns the 15 hexagrams that have the current trigram in either the top or bottom position. Note that one of the hexagrams will have the trigram in *both* the top and bottom positions, which is why there are a total 15 instead of 16.
+
+**Examples**
+```javascript
+var hexagrams = iChing.trigram(2).hexagrams();
+var numbers = [];
+hexagrams.forEach((h) => {
+  numbers.push(h.number);
+});
+console.log('%d items: %j', numbers.length, numbers);
+// output: 
+15 items: [2,7,8,11,12,15,16,19,20,23,24,35,36,45,46]
+```
+
+```javascript
+var hexagrams = iChing.trigram(2).hexagrams('top');
+var numbers = [];
+hexagrams.forEach((h) => {
+  numbers.push(h.number);
+});
+console.log('%d items: %j', numbers.length, numbers);
+// output: 
+8 items: [2,7,11,15,19,24,36,46]
+```
+
 # Test
 
 ```shell
 npm test
 ```
 
+
+
 # Change Log
 
-### Version 0.3.2
+##### Version 0.3.3
+
+* Added `Trigram.hexagrams(position)` method.
+* Documentation improvements in README.
+
+##### Version 0.3.2
 
 * Fixed minor logical error in yarrow stalk operation.
 
-### Version 0.3.1
+##### Version 0.3.1
 
 * Changed `iChing.reading` method to `iChing.ask`.
 
-### Version 0.2.1
+##### Version 0.2.1
 
 * Minor documentation cleanup.
 
-### Version 0.2.0
+##### Version 0.2.0
 
 * Added the `Reading` class and the yarrow stalk method of obtaining a reading.
 * Added `Hexagram.changeLines` method.
 * Separated pinyin names from Chinese names into their own properties.
 
-### Version 0.1.x
+##### Version 0.1.x
 
 * initial release
 
