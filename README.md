@@ -118,7 +118,7 @@ npm install --save i-ching
 
 # API
 
-#### [iChing Module](#iching-m)
+### [iChing Module](#iching-m)
 
 [Properties](#iching-properties)
 * [`iChing.hexagrams`](#iching-hexagrams)
@@ -126,12 +126,12 @@ npm install --save i-ching
 
 [Methods](#iching-methods)
 * [`iChing.asGraph()`](#iching-asgraph)
-* [`iChing.ask()`](#iching-ask)
+* [`iChing.ask(question)`](#iching-ask)
 * [`iChing.hexagram(number)`](#iching-hexagram)
 * [`iChing.trigram(number)`](#iching-trigram)
 * [`iChing.trigramSequence(name)`](#iching-trigramsequence)
 
-#### [Change Class](#change)
+### [Change Class](#change)
 
 [Properties](#change-properties)
 * [`Change.binary`](#change-binary)
@@ -139,7 +139,7 @@ npm install --save i-ching
 * [`Change.from`](#change-from)
 * [`Change.to`](#change-to)
 
-#### [Hexagram Class](#hexagram)
+### [Hexagram Class](#hexagram)
 
 [Properties](#hexagram-properties)
 * [`Hexagram.binary`](#hexagram-binary)
@@ -157,13 +157,13 @@ npm install --save i-ching
 * [`Hexagram.changeLines(lines)`](#hexagram-changelines)
 * [`Hexagram.changeTo(number)`](#hexagram-changeto)
 
-#### [Reading Class](#reading)
+### [Reading Class](#reading)
 
 [Properties](#reading-properties)
 * [`Reading.change`](#reading-change)
 * [`Reading.hexagram`](#reading-hexagram)
 
-#### [Trigram Class](#trigram)
+### [Trigram Class](#trigram)
 
 [Properties](#trigram-properties)
 * [`Trigram.attribute`](#trigram-attribute)
@@ -751,7 +751,7 @@ hexagrams.forEach((h) => {
 });
 console.log('%d items: %j', numbers.length, numbers);
 // output: 
-15 items: [2,7,8,11,12,15,16,19,20,23,24,35,36,45,46]
+// 15 items: [2,7,8,11,12,15,16,19,20,23,24,35,36,45,46]
 ```
 
 ```javascript
@@ -762,7 +762,7 @@ hexagrams.forEach((h) => {
 });
 console.log('%d items: %j', numbers.length, numbers);
 // output: 
-8 items: [2,7,11,15,19,24,36,46]
+// 8 items: [2,7,11,15,19,24,36,46]
 ```
 
 # Test
